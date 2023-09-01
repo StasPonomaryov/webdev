@@ -1,8 +1,8 @@
 import { createTranslator, NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { source, fira } from '@/app/fonts';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { source, fira } from '../fonts';
 
 import '../globals.css';
 
@@ -15,7 +15,7 @@ type RootLayoutProps = {
 
 async function getMessages(locale: string) {
   try {
-    return (await import(`../../messages/${locale}.json`)).default;
+    return (await import(`../../../messages/${locale}.json`)).default;
   } catch (error) {
     notFound();
   }

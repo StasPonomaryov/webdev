@@ -1,0 +1,961 @@
+[debug] [2023-08-31T19:16:44.499Z] ----------------------------------------------------------------------
+[debug] [2023-08-31T19:16:44.501Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-31T19:16:44.502Z] CLI Version:   12.4.2
+[debug] [2023-08-31T19:16:44.502Z] Platform:      win32
+[debug] [2023-08-31T19:16:44.502Z] Node Version:  v16.16.0
+[debug] [2023-08-31T19:16:44.503Z] Time:          Thu Aug 31 2023 22:16:44 GMT+0300 (Восточная Европа, летнее время)
+[debug] [2023-08-31T19:16:44.503Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-31T19:16:44.571Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-31T19:16:44.572Z] > authorizing via signed-in user (ponomaryov.stas@gmail.com)
+[debug] [2023-08-31T19:16:44.572Z] [iam] checking project webdev-stas for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-31T19:16:44.574Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions [none]
+[debug] [2023-08-31T19:16:44.574Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions x-goog-quota-user=projects/webdev-stas
+[debug] [2023-08-31T19:16:44.574Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-31T19:16:45.508Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions 200
+[debug] [2023-08-31T19:16:45.509Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-31T19:16:45.510Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas [none]
+[debug] [2023-08-31T19:16:45.887Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas 200
+[debug] [2023-08-31T19:16:45.887Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas {"projectId":"webdev-stas","projectNumber":"331790068292","displayName":"webdev-stas","name":"projects/webdev-stas","resources":{"hostingSite":"webdev-stas"},"state":"ACTIVE","etag":"1_479f3dd9-acdc-437e-bdeb-9e4cbc38f7ba"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-08-31T19:17:19.695Z] Error: Export encountered errors on following paths:
+	/[locale]/page: /en
+	/[locale]/page: /uk
+    at D:\git\repositories\stas-dev\node_modules\next\dist\export\index.js:623:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:1579:21
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:1435:17
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async build (D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:146:29)
+    at async build (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:57:5)
+    at async prepareFrameworks (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:216:33)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-09-01T07:12:05.048Z] ----------------------------------------------------------------------
+[debug] [2023-09-01T07:12:05.049Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-01T07:12:05.050Z] CLI Version:   12.4.2
+[debug] [2023-09-01T07:12:05.050Z] Platform:      win32
+[debug] [2023-09-01T07:12:05.050Z] Node Version:  v16.16.0
+[debug] [2023-09-01T07:12:05.051Z] Time:          Fri Sep 01 2023 10:12:05 GMT+0300 (Восточная Европа, летнее время)
+[debug] [2023-09-01T07:12:05.051Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-01T07:12:05.116Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-01T07:12:05.116Z] > authorizing via signed-in user (ponomaryov.stas@gmail.com)
+[debug] [2023-09-01T07:12:05.117Z] [iam] checking project webdev-stas for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-01T07:12:05.118Z] > refreshing access token with scopes: []
+[debug] [2023-09-01T07:12:05.120Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-01T07:12:05.120Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-01T07:12:05.304Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-09-01T07:12:05.304Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-01T07:12:05.311Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions [none]
+[debug] [2023-09-01T07:12:05.311Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T07:12:05.311Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T07:12:06.269Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions 200
+[debug] [2023-09-01T07:12:06.269Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T07:12:06.270Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas [none]
+[debug] [2023-09-01T07:12:06.664Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas 200
+[debug] [2023-09-01T07:12:06.664Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas {"projectId":"webdev-stas","projectNumber":"331790068292","displayName":"webdev-stas","name":"projects/webdev-stas","resources":{"hostingSite":"webdev-stas"},"state":"ACTIVE","etag":"1_995cec4a-7641-455b-9fe1-d5a86b3d66ff"}
+[warn] !  hosting: Couldn't find specified i18n root directory /locale in public directory . 
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-09-01T07:12:32.481Z] Error: Export encountered errors on following paths:
+	/[locale]/page: /en
+	/[locale]/page: /uk
+    at D:\git\repositories\stas-dev\node_modules\next\dist\export\index.js:623:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:1579:21
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:1435:17
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async build (D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:146:29)
+    at async build (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:57:5)
+    at async prepareFrameworks (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:216:33)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-09-01T07:12:47.570Z] ----------------------------------------------------------------------
+[debug] [2023-09-01T07:12:47.572Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-01T07:12:47.572Z] CLI Version:   12.4.2
+[debug] [2023-09-01T07:12:47.572Z] Platform:      win32
+[debug] [2023-09-01T07:12:47.573Z] Node Version:  v16.16.0
+[debug] [2023-09-01T07:12:47.573Z] Time:          Fri Sep 01 2023 10:12:47 GMT+0300 (Восточная Европа, летнее время)
+[debug] [2023-09-01T07:12:47.574Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-01T07:12:47.639Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-01T07:12:47.640Z] > authorizing via signed-in user (ponomaryov.stas@gmail.com)
+[debug] [2023-09-01T07:12:47.640Z] [iam] checking project webdev-stas for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-01T07:12:47.642Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions [none]
+[debug] [2023-09-01T07:12:47.642Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T07:12:47.642Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T07:12:48.552Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions 200
+[debug] [2023-09-01T07:12:48.552Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T07:12:48.553Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas [none]
+[debug] [2023-09-01T07:12:48.919Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas 200
+[debug] [2023-09-01T07:12:48.919Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas {"projectId":"webdev-stas","projectNumber":"331790068292","displayName":"webdev-stas","name":"projects/webdev-stas","resources":{"hostingSite":"webdev-stas"},"state":"ACTIVE","etag":"1_995cec4a-7641-455b-9fe1-d5a86b3d66ff"}
+[warn] !  hosting: Couldn't find specified i18n root directory /[locale] in public directory . 
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-09-01T07:13:13.983Z] Error: Export encountered errors on following paths:
+	/[locale]/page: /en
+	/[locale]/page: /uk
+    at D:\git\repositories\stas-dev\node_modules\next\dist\export\index.js:623:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:1579:21
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:1435:17
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async build (D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:146:29)
+    at async build (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:57:5)
+    at async prepareFrameworks (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:216:33)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-09-01T07:15:36.066Z] ----------------------------------------------------------------------
+[debug] [2023-09-01T07:15:36.068Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-01T07:15:36.068Z] CLI Version:   12.4.2
+[debug] [2023-09-01T07:15:36.069Z] Platform:      win32
+[debug] [2023-09-01T07:15:36.069Z] Node Version:  v16.16.0
+[debug] [2023-09-01T07:15:36.070Z] Time:          Fri Sep 01 2023 10:15:36 GMT+0300 (Восточная Европа, летнее время)
+[debug] [2023-09-01T07:15:36.070Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-01T07:15:36.135Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-01T07:15:36.135Z] > authorizing via signed-in user (ponomaryov.stas@gmail.com)
+[debug] [2023-09-01T07:15:36.135Z] [iam] checking project webdev-stas for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-01T07:15:36.137Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions [none]
+[debug] [2023-09-01T07:15:36.137Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T07:15:36.138Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T07:15:37.082Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions 200
+[debug] [2023-09-01T07:15:37.083Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T07:15:37.084Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas [none]
+[debug] [2023-09-01T07:15:37.833Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas 200
+[debug] [2023-09-01T07:15:37.833Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas {"projectId":"webdev-stas","projectNumber":"331790068292","displayName":"webdev-stas","name":"projects/webdev-stas","resources":{"hostingSite":"webdev-stas"},"state":"ACTIVE","etag":"1_995cec4a-7641-455b-9fe1-d5a86b3d66ff"}
+[warn] !  hosting: Couldn't find specified i18n root directory /localized-files in public directory . 
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-09-01T07:16:02.752Z] Error: Export encountered errors on following paths:
+	/[locale]/page: /en
+	/[locale]/page: /uk
+    at D:\git\repositories\stas-dev\node_modules\next\dist\export\index.js:623:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:1579:21
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:1435:17
+    at async Span.traceAsyncFn (D:\git\repositories\stas-dev\node_modules\next\dist\trace\trace.js:103:20)
+    at async build (D:\git\repositories\stas-dev\node_modules\next\dist\build\index.js:146:29)
+    at async build (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:57:5)
+    at async prepareFrameworks (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:216:33)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-09-01T07:17:51.439Z] ----------------------------------------------------------------------
+[debug] [2023-09-01T07:17:51.441Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-01T07:17:51.441Z] CLI Version:   12.4.2
+[debug] [2023-09-01T07:17:51.442Z] Platform:      win32
+[debug] [2023-09-01T07:17:51.442Z] Node Version:  v16.16.0
+[debug] [2023-09-01T07:17:51.443Z] Time:          Fri Sep 01 2023 10:17:51 GMT+0300 (Восточная Европа, летнее время)
+[debug] [2023-09-01T07:17:51.443Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-01T07:17:51.507Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-01T07:17:51.508Z] > authorizing via signed-in user (ponomaryov.stas@gmail.com)
+[debug] [2023-09-01T07:17:51.508Z] [iam] checking project webdev-stas for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-01T07:17:51.510Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions [none]
+[debug] [2023-09-01T07:17:51.510Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T07:17:51.510Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T07:17:52.543Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions 200
+[debug] [2023-09-01T07:17:52.544Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T07:17:52.545Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas [none]
+[debug] [2023-09-01T07:17:53.005Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas 200
+[debug] [2023-09-01T19:13:22.610Z] ----------------------------------------------------------------------
+[debug] [2023-09-01T19:13:22.612Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-01T19:13:22.612Z] CLI Version:   12.4.2
+[debug] [2023-09-01T19:13:22.612Z] Platform:      win32
+[debug] [2023-09-01T19:13:22.613Z] Node Version:  v16.16.0
+[debug] [2023-09-01T19:13:22.613Z] Time:          Fri Sep 01 2023 22:13:22 GMT+0300 (Восточная Европа, летнее время)
+[debug] [2023-09-01T19:13:22.614Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-01T19:13:22.617Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-09-01T19:13:22.697Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-01T19:13:22.697Z] > authorizing via signed-in user (ponomaryov.stas@gmail.com)
+[debug] [2023-09-01T19:13:22.698Z] [iam] checking project webdev-stas for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-01T19:13:22.699Z] > refreshing access token with scopes: []
+[debug] [2023-09-01T19:13:22.699Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-01T19:13:22.700Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-01T19:13:22.877Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-09-01T19:13:22.877Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-01T19:13:22.891Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions [none]
+[debug] [2023-09-01T19:13:22.891Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:13:22.891Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T19:13:23.150Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-09-01T19:13:23.150Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-09-01T19:13:24.022Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions 200
+[debug] [2023-09-01T19:13:24.022Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T19:13:24.023Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas [none]
+[debug] [2023-09-01T19:13:24.417Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas 200
+[debug] [2023-09-01T19:13:24.417Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas {"projectId":"webdev-stas","projectNumber":"331790068292","displayName":"webdev-stas","name":"projects/webdev-stas","resources":{"hostingSite":"webdev-stas"},"state":"ACTIVE","etag":"1_995cec4a-7641-455b-9fe1-d5a86b3d66ff"}
+[warn] !  hosting: Couldn't find specified i18n root directory /localized-files in public directory . 
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-09-01T19:14:03.788Z] Error: ENOENT: no such file or directory, open 'D:\git\repositories\stas-dev\.next\server\client-reference-manifest.js'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-09-01T19:14:32.613Z] ----------------------------------------------------------------------
+[debug] [2023-09-01T19:14:32.614Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-01T19:14:32.615Z] CLI Version:   12.4.2
+[debug] [2023-09-01T19:14:32.615Z] Platform:      win32
+[debug] [2023-09-01T19:14:32.615Z] Node Version:  v16.16.0
+[debug] [2023-09-01T19:14:32.616Z] Time:          Fri Sep 01 2023 22:14:32 GMT+0300 (Восточная Европа, летнее время)
+[debug] [2023-09-01T19:14:32.616Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-01T19:14:32.687Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-01T19:14:32.687Z] > authorizing via signed-in user (ponomaryov.stas@gmail.com)
+[debug] [2023-09-01T19:14:32.687Z] [iam] checking project webdev-stas for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-01T19:14:32.689Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions [none]
+[debug] [2023-09-01T19:14:32.689Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:14:32.690Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T19:14:33.600Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions 200
+[debug] [2023-09-01T19:14:33.600Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T19:14:33.601Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas [none]
+[debug] [2023-09-01T19:14:33.983Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas 200
+[debug] [2023-09-01T19:14:33.983Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas {"projectId":"webdev-stas","projectNumber":"331790068292","displayName":"webdev-stas","name":"projects/webdev-stas","resources":{"hostingSite":"webdev-stas"},"state":"ACTIVE","etag":"1_995cec4a-7641-455b-9fe1-d5a86b3d66ff"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-09-01T19:15:03.227Z] Error: ENOENT: no such file or directory, open 'D:\git\repositories\stas-dev\.next\server\client-reference-manifest.js'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-09-01T19:26:04.079Z] ----------------------------------------------------------------------
+[debug] [2023-09-01T19:26:04.081Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-01T19:26:04.081Z] CLI Version:   12.5.2
+[debug] [2023-09-01T19:26:04.081Z] Platform:      win32
+[debug] [2023-09-01T19:26:04.082Z] Node Version:  v16.16.0
+[debug] [2023-09-01T19:26:04.082Z] Time:          Fri Sep 01 2023 22:26:04 GMT+0300 (Восточная Европа, летнее время)
+[debug] [2023-09-01T19:26:04.083Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-01T19:26:04.150Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-01T19:26:04.150Z] > authorizing via signed-in user (ponomaryov.stas@gmail.com)
+[debug] [2023-09-01T19:26:04.150Z] [iam] checking project webdev-stas for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-09-01T19:26:04.152Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions [none]
+[debug] [2023-09-01T19:26:04.153Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:26:04.153Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T19:26:05.217Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions 200
+[debug] [2023-09-01T19:26:05.217Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-09-01T19:26:05.218Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas [none]
+[debug] [2023-09-01T19:26:05.622Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas 200
+[debug] [2023-09-01T19:26:05.622Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas {"projectId":"webdev-stas","projectNumber":"331790068292","displayName":"webdev-stas","name":"projects/webdev-stas","resources":{"hostingSite":"webdev-stas"},"state":"ACTIVE","etag":"1_718e65c4-68c9-4d59-95d8-36d4124a35fc"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Creating an optimized production build...
+
+[info] - info Compiled successfully
+
+[info] - info Linting and checking validity of types...
+
+[info] - info Collecting page data...
+
+[info] - info Generating static pages (0/7)
+
+[info] (node:9456) ExperimentalWarning: buffer.Blob is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[info] - info Generating static pages (1/7)
+
+[info] - info Generating static pages (3/7)
+
+[info] - info Generating static pages (5/7)
+
+[info] - info Generating static pages (7/7)
+
+[info] - info Finalizing page optimization...
+
+[info] 
+
+[info] Route (app)                                Size     First Load JS
+┌ ○ /                                      406 B          78.9 kB
+├ ○ /_not-found                            0 B                0 B
+├ ● /[locale]                              4.86 kB         123 kB
+├   ├ /uk
+├   └ /en
+├ λ /[locale]/[...rest]                    407 B          78.9 kB
+└ ○ /favicon.ico                           0 B                0 B
++ First Load JS shared by all              78.5 kB
+  ├ chunks/596-d0c4f7373d649f05.js         26.1 kB
+  ├ chunks/fd9d1056-c34c6f34d660ba8f.js    50.5 kB
+  ├ chunks/main-app-ea3a888e2a3ab204.js    219 B
+  └ chunks/webpack-bc53de4dcc55e073.js     1.71 kB
+
+Route (pages)                              Size     First Load JS
++ First Load JS shared by all              76.4 kB
+  ├ chunks/framework-8883d1e9be70c3da.js   45.1 kB
+  ├ chunks/main-583a4d077d7689dd.js        29.5 kB
+  ├ chunks/pages/_app-52924524f99094ab.js  195 B
+  └ chunks/webpack-bc53de4dcc55e073.js     1.71 kB
+
+ƒ Middleware                               33.2 kB
+
+[info] 
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+●  (SSG)     automatically generated as static HTML + JSON (uses getStaticProps)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • middleware
+[info]  • use of fallback /[locale]
+[info]  • non-static component /_not-found
+[info]  • non-static component /[locale]/[...rest]/page
+[info] 
+[debug] [2023-09-01T19:26:38.907Z] skipping / due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2023-09-01T19:26:38.907Z] skipping /uk due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2023-09-01T19:26:38.907Z] skipping /en due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2023-09-01T19:26:38.907Z] skipping /404 due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2023-09-01T19:27:16.285Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "us-central1"
+      },
+      "site": "webdev-stas",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": {
+            "functionId": "ssrwebdevstas",
+            "region": "us-central1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/favicon.ico",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, max-age=0, must-revalidate"
+            },
+            {
+              "key": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "/favicon.ico/route"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase\\webdev-stas\\hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase\\webdev-stas\\functions",
+      "codebase": "firebase-frameworks-webdev-stas"
+    }
+  ]
+}
+[debug] [2023-09-01T19:27:16.286Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-01T19:27:16.286Z] > authorizing via signed-in user (ponomaryov.stas@gmail.com)
+[debug] [2023-09-01T19:27:16.286Z] [iam] checking project webdev-stas for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2023-09-01T19:27:16.287Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions [none]
+[debug] [2023-09-01T19:27:16.287Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:16.287Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2023-09-01T19:27:17.170Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions 200
+[debug] [2023-09-01T19:27:17.170Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'webdev-stas'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2023-09-01T19:27:17.173Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas [none]
+[debug] [2023-09-01T19:27:17.599Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas 200
+[debug] [2023-09-01T19:27:17.599Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas {"projectId":"webdev-stas","projectNumber":"331790068292","displayName":"webdev-stas","name":"projects/webdev-stas","resources":{"hostingSite":"webdev-stas"},"state":"ACTIVE","etag":"1_718e65c4-68c9-4d59-95d8-36d4124a35fc"}
+[info] i  functions: preparing codebase firebase-frameworks-webdev-stas for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2023-09-01T19:27:17.602Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-09-01T19:27:17.602Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:17.603Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-09-01T19:27:17.603Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:17.605Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com [none]
+[debug] [2023-09-01T19:27:17.605Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:17.606Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com [none]
+[debug] [2023-09-01T19:27:17.606Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:18.695Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/runtimeconfig.googleapis.com 200
+[debug] [2023-09-01T19:27:18.696Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-09-01T19:27:18.711Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com 200
+[debug] [2023-09-01T19:27:18.711Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com [omitted]
+[warn] !  artifactregistry: missing required API artifactregistry.googleapis.com. Enabling now... 
+[debug] [2023-09-01T19:27:18.712Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com:enable [none]
+[debug] [2023-09-01T19:27:18.712Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com:enable x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:18.716Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com 200
+[debug] [2023-09-01T19:27:18.716Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com [omitted]
+[warn] !  functions: missing required API cloudbuild.googleapis.com. Enabling now... 
+[debug] [2023-09-01T19:27:18.717Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com:enable [none]
+[debug] [2023-09-01T19:27:18.717Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com:enable x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:18.719Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com 200
+[debug] [2023-09-01T19:27:18.719Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com [omitted]
+[warn] !  functions: missing required API cloudfunctions.googleapis.com. Enabling now... 
+[debug] [2023-09-01T19:27:18.720Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-09-01T19:27:18.720Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:21.422Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-09-01T19:27:21.422Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-09-01T19:27:22.624Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com:enable 200
+[debug] [2023-09-01T19:27:22.624Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com:enable [omitted]
+[debug] [2023-09-01T19:27:22.790Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com:enable 200
+[debug] [2023-09-01T19:27:22.790Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com:enable [omitted]
+[debug] [2023-09-01T19:27:31.436Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-09-01T19:27:31.436Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:32.458Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com 200
+[debug] [2023-09-01T19:27:32.458Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2023-09-01T19:27:32.639Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com [none]
+[debug] [2023-09-01T19:27:32.639Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:32.794Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com [none]
+[debug] [2023-09-01T19:27:32.794Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:33.719Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com 200
+[debug] [2023-09-01T19:27:33.719Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2023-09-01T19:27:33.930Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com 200
+[debug] [2023-09-01T19:27:33.930Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2023-09-01T19:27:33.932Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas/adminSdkConfig [none]
+[debug] [2023-09-01T19:27:34.294Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas/adminSdkConfig 200
+[debug] [2023-09-01T19:27:34.295Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas/adminSdkConfig {"projectId":"webdev-stas","storageBucket":"webdev-stas.appspot.com"}
+[debug] [2023-09-01T19:27:34.295Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/webdev-stas/configs [none]
+[debug] [2023-09-01T19:27:34.796Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/webdev-stas/configs 200
+[debug] [2023-09-01T19:27:34.796Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/webdev-stas/configs {}
+[debug] [2023-09-01T19:27:34.798Z] Validating nodejs source
+[debug] [2023-09-01T19:27:36.392Z] > [functions] package.json contents: {
+  "name": "stas-dev",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/node": "20.4.6",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.14",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.19",
+    "next": "^13.4.19",
+    "next-intl": "^2.20.0",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "^5.2.2",
+    "firebase-frameworks": "^0.10.4",
+    "firebase-functions": "^4.3.0",
+    "firebase-admin": "^11.0.1"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "16"
+  }
+}
+[debug] [2023-09-01T19:27:36.392Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase firebase-frameworks-webdev-stas to determine what to deploy 
+[debug] [2023-09-01T19:27:36.393Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-09-01T19:27:36.402Z] Found firebase-functions binary at 'D:\git\repositories\stas-dev\.firebase\webdev-stas\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8024
+
+[debug] [2023-09-01T19:27:37.635Z] Got response from /__/functions.yaml {"endpoints":{"ssrwebdevstas":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrwebdevstas"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] shutdown requested via /__/quitquitquit
+
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: preparing .firebase\webdev-stas\functions directory for uploading... 
+[info] i  functions: packaged D:\git\repositories\stas-dev\.firebase\webdev-stas\functions (81.5 MB) for uploading 
+[debug] [2023-09-01T19:27:40.647Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/webdev-stas/locations/-/functions [none]
+[debug] [2023-09-01T19:27:41.526Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/webdev-stas/locations/-/functions 200
+[debug] [2023-09-01T19:27:41.526Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/webdev-stas/locations/-/functions {}
+[debug] [2023-09-01T19:27:41.526Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2023-09-01T19:27:42.701Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/-/functions 200
+[debug] [2023-09-01T19:27:42.701Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/-/functions {}
+[info] i  functions: ensuring required API run.googleapis.com is enabled... 
+[info] i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+[info] i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+[info] i  functions: ensuring required API storage.googleapis.com is enabled... 
+[debug] [2023-09-01T19:27:42.705Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com [none]
+[debug] [2023-09-01T19:27:42.705Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:42.706Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com [none]
+[debug] [2023-09-01T19:27:42.706Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:42.707Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/pubsub.googleapis.com [none]
+[debug] [2023-09-01T19:27:42.707Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/pubsub.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:42.708Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/storage.googleapis.com [none]
+[debug] [2023-09-01T19:27:42.708Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/storage.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:43.784Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com 200
+[debug] [2023-09-01T19:27:43.784Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com [omitted]
+[warn] !  functions: missing required API eventarc.googleapis.com. Enabling now... 
+[debug] [2023-09-01T19:27:43.785Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com:enable [none]
+[debug] [2023-09-01T19:27:43.785Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com:enable x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:43.789Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/pubsub.googleapis.com 200
+[debug] [2023-09-01T19:27:43.789Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/pubsub.googleapis.com [omitted]
+[info] +  functions: required API pubsub.googleapis.com is enabled 
+[debug] [2023-09-01T19:27:43.792Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/storage.googleapis.com 200
+[debug] [2023-09-01T19:27:43.792Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/storage.googleapis.com [omitted]
+[info] +  functions: required API storage.googleapis.com is enabled 
+[debug] [2023-09-01T19:27:43.796Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com 200
+[debug] [2023-09-01T19:27:43.796Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com [omitted]
+[warn] !  functions: missing required API run.googleapis.com. Enabling now... 
+[debug] [2023-09-01T19:27:43.797Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com:enable [none]
+[debug] [2023-09-01T19:27:43.797Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com:enable x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:45.601Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com:enable 200
+[debug] [2023-09-01T19:27:45.602Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com:enable [omitted]
+[debug] [2023-09-01T19:27:45.649Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com:enable 200
+[debug] [2023-09-01T19:27:45.649Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com:enable [omitted]
+[debug] [2023-09-01T19:27:55.606Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com [none]
+[debug] [2023-09-01T19:27:55.606Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:55.653Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com [none]
+[debug] [2023-09-01T19:27:55.653Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:27:56.684Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com 200
+[debug] [2023-09-01T19:27:56.684Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/eventarc.googleapis.com [omitted]
+[info] +  functions: required API eventarc.googleapis.com is enabled 
+[debug] [2023-09-01T19:27:56.720Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com 200
+[debug] [2023-09-01T19:27:56.721Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webdev-stas/services/run.googleapis.com [omitted]
+[info] +  functions: required API run.googleapis.com is enabled 
+[info] i  functions: generating the service identity for pubsub.googleapis.com... 
+[info] i  functions: generating the service identity for eventarc.googleapis.com... 
+[debug] [2023-09-01T19:27:56.724Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/331790068292/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-09-01T19:27:56.725Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/331790068292/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[debug] [2023-09-01T19:27:57.920Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/331790068292/services/pubsub.googleapis.com:generateServiceIdentity 200
+[debug] [2023-09-01T19:27:57.920Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/331790068292/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-331790068292@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"107577868501333497987"}}
+[debug] [2023-09-01T19:27:58.386Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/331790068292/services/eventarc.googleapis.com:generateServiceIdentity 200
+[debug] [2023-09-01T19:27:58.386Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/331790068292/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-331790068292@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"102347753318014193073"}}
+[debug] [2023-09-01T19:27:58.388Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas [none]
+[debug] [2023-09-01T19:27:58.714Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas 200
+[debug] [2023-09-01T19:27:58.714Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdev-stas {"projectId":"webdev-stas","projectNumber":"331790068292","displayName":"webdev-stas","name":"projects/webdev-stas","resources":{"hostingSite":"webdev-stas"},"state":"ACTIVE","etag":"1_718e65c4-68c9-4d59-95d8-36d4124a35fc"}
+[debug] [2023-09-01T19:27:58.716Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/webdev-stas/versions [none]
+[debug] [2023-09-01T19:27:58.716Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/webdev-stas/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[debug] [2023-09-01T19:28:00.630Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/webdev-stas/versions 200
+[debug] [2023-09-01T19:28:00.630Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/webdev-stas/versions {"name":"projects/331790068292/sites/webdev-stas/versions/eb7fd525f86a164f","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase","firebase-web-framework":"next_ssr"}}
+[debug] [2023-09-01T19:28:00.630Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2023-09-01T19:28:00.631Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions [none]
+[debug] [2023-09-01T19:28:00.631Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions x-goog-quota-user=projects/webdev-stas
+[debug] [2023-09-01T19:28:00.631Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2023-09-01T19:28:01.446Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions 200
+[debug] [2023-09-01T19:28:01.446Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdev-stas:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2023-09-01T19:28:01.446Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2023-09-01T19:28:01.446Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2023-09-01T19:28:03.992Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2023-09-01T19:28:03.992Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-331790068292-us-central1/2e8fc6ca-1cc2-47b8-957b-cfcce2cdb678.zip?GoogleAccessId=service-331790068292@gcf-admin-robot.iam.gserviceaccount.com&Expires=1693598282&Signature=QL1xgEL8VfNrFHEapZA6U1g8GaqCgoxaSfiM6ZWDDdRzS90ZlCVDX4yqW1L2kYC0hxA1L7V%2FoKK4BKtdoq19rA%2F1COBL3rQVvlrgv6xVi%2BVJLd1CqjsMGGLuLka10mCiPcQbE%2Bn98HAsd0ZDBBNPt94y17d3azw6Zo%2FuxYIe4ccBXvmYKeiEyQW98B6ItDkEVvi1lPXoLMrrvPkQUWcQ%2FJHeEDJ5GOKRVI%2BNvMMoB5lMtDGH69nWJwvABP49Zk6oMbTIfXjxC%2BQiagDDlxSDL5GkffKckxFpQr3Kfm5%2FvYggB%2FGTdmAMGyIgOtsmYO53RHm%2FHFSYlQOf%2FyGckYDidQ%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-331790068292-us-central1","object":"2e8fc6ca-1cc2-47b8-957b-cfcce2cdb678.zip"}}
+[debug] [2023-09-01T19:28:03.992Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-331790068292-us-central1/2e8fc6ca-1cc2-47b8-957b-cfcce2cdb678.zip GoogleAccessId=service-331790068292%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1693598282&Signature=QL1xgEL8VfNrFHEapZA6U1g8GaqCgoxaSfiM6ZWDDdRzS90ZlCVDX4yqW1L2kYC0hxA1L7V%2FoKK4BKtdoq19rA%2F1COBL3rQVvlrgv6xVi%2BVJLd1CqjsMGGLuLka10mCiPcQbE%2Bn98HAsd0ZDBBNPt94y17d3azw6Zo%2FuxYIe4ccBXvmYKeiEyQW98B6ItDkEVvi1lPXoLMrrvPkQUWcQ%2FJHeEDJ5GOKRVI%2BNvMMoB5lMtDGH69nWJwvABP49Zk6oMbTIfXjxC%2BQiagDDlxSDL5GkffKckxFpQr3Kfm5%2FvYggB%2FGTdmAMGyIgOtsmYO53RHm%2FHFSYlQOf%2FyGckYDidQ%3D%3D
+[debug] [2023-09-01T19:28:03.992Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-331790068292-us-central1/2e8fc6ca-1cc2-47b8-957b-cfcce2cdb678.zip [stream]
+[debug] [2023-09-01T19:28:33.206Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-331790068292-us-central1/2e8fc6ca-1cc2-47b8-957b-cfcce2cdb678.zip 200
+[debug] [2023-09-01T19:28:33.206Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-331790068292-us-central1/2e8fc6ca-1cc2-47b8-957b-cfcce2cdb678.zip [omitted]
+[info] +  functions: .firebase\webdev-stas\functions folder uploaded successfully 
+[info] i  hosting[webdev-stas]: beginning deploy... 
+[info] i  hosting[webdev-stas]: found 79 files in .firebase\webdev-stas\hosting 
+[debug] [2023-09-01T19:28:33.228Z] [hosting] uploading with 200 concurrency
+[debug] [2023-09-01T19:28:33.230Z] [hosting] hash cache [LmZpcmViYXNlXHdlYmRldi1zdGFzXGhvc3Rpbmc] not populated
+[debug] [2023-09-01T19:28:33.286Z] [hosting] hash cache [LmZpcmViYXNlXHdlYmRldi1zdGFzXGhvc3Rpbmc] stored for 79 files
+[debug] [2023-09-01T19:28:33.286Z] [hosting][hash queue][FINAL] {"max":52,"min":10,"avg":25.696202531645568,"active":0,"complete":79,"success":79,"errored":0,"retried":0,"total":79,"elapsed":55}
+[debug] [2023-09-01T19:28:33.286Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/331790068292/sites/webdev-stas/versions/eb7fd525f86a164f:populateFiles [none]
+[debug] [2023-09-01T19:28:33.287Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/331790068292/sites/webdev-stas/versions/eb7fd525f86a164f:populateFiles {"files":{"/img/logos/css.png":"2bf6f39ed9b734010000f311c0f06ff25fece11243e20ade6369b5d42d194767","/img/logos/js.png":"3939c7aaba366e227f56178311d5fd3e73e8bcaa969bda3f45d3526f96478422","/img/logos/nextjs.png":"c17259c3c829f0b36dc12b302022e49fefc8acbeeaa4fd62e7c7ea482568c0bb","/img/logos/node.png":"f84fba27bee979ec45e99e1573a23f560d618046d1496134e59b9cad9fb6d24a","/img/logos/opencart.png":"aac6c9660066fb4eb661ce10f6ae1599c938414fad052512ed9f0b1fcae81ae2","/img/logos/php.png":"240fea35dd874f72e09647c14fd1801ae6dba384dd7a57347cfcee6f463f6f0d","/img/logos/ts.png":"9c11022648dfcdcb2adb3c2ad0d80263ef7473254716ff462f609f9b2a439700","/img/logos/woo.png":"ab78322a359427f8e17cfce41031822b54f7c5537e4442fc8fba7dcd9386ab44","/_next/static/chunks/360-cd3d85125cca645b.js":"6d17ddadff6d077f76796d0dd2b292c6cde340e1e947735c8aec88ee17b03b68","/_next/static/chunks/main-app-ea3a888e2a3ab204.js":"26a3cb1072f78a222994eaf71415232edf36ab80ad7a40868910b20a161001bc","/favicon.ico":"43127f4210c52bcd0f30f291f1ee296ab41ddd1566905dc27fe1129e0175c8f1","/_next/static/chunks/app/layout-97775bab0afaab18.js":"4d1080e92bcf158eaee911cd12e1f0bb8471d543f7e56994acd7b8e2c9f9a7b7","/_next/static/chunks/app/not-found-6cd38a4af975a021.js":"0d1b49f72e16715f65ae579d25a6c8a8e40d9fe0b313bfaf02b0b9e69f102663","/_next/static/chunks/webpack-bc53de4dcc55e073.js":"b701adbd6eab2826da7700a9d5f5fe0fdb6b21e3b7bb6947b5de3f1384c92ff9","/_next/static/chunks/app/[locale]/not-found-f4dd9b7a08457e45.js":"cd9ea297f5a9e1c49fe0baae7fd29501f183d329c6f5fe0882b59e1b5fdd91af","/_next/static/chunks/app/page-129ee1dc14ed169f.js":"221a1eb7bdc4cf68942a45068d738e92ce90b5458ff83876e1d5f5e5ada52971","/_next/static/chunks/app/[locale]/error-e79e4e7822dcd866.js":"50b72b9c5a1ea1a40b4ca38d7da5488bf23f50ab4a687d7a021319a23bb62e73","/_next/static/chunks/pages/_app-52924524f99094ab.js":"25f0e57f29b8d53b1e63d9e08df9d063dd50c84633a0fc66ef47350779c7ed41","/_next/static/chunks/pages/_error-c92d5c4bb2b49926.js":"2c86592bf57245e63ddaa1303d91245f5f8b4bbb0ac0f57e488e638eb4cf0964","/_next/static/chunks/app/[locale]/layout-2984db0cbaa21c78.js":"f187cb736a8e452acb7b56a52e1e56229ad7448a4d7bb456ba4faa1ad127479c","/_next/static/css/4be1d72a277c1636.css":"453801d2b4663556a995573eb653e3287611a5f348c3efb91afe95a1c518063d","/_next/static/chunks/app/[locale]/[...rest]/page-1ee7b5b9c31f00ba.js":"93cb77eded40bbd6f45a348292a38a2c30a77a4ddf05d93096ff7ec313a7f240","/_next/static/chunks/app/[locale]/page-8d6fa91bd9eeec7f.js":"167c2d55e4b603d579dc83e5a16a31a462e08879ffe9757cd90af10605a5653d","/_next/static/media/1e1d9f7ee33f5a4d-s.woff2":"0f382dd04026f9a9b15ca5ab1ed07ab9cebb31828dadea8aef289b5d3ff1dcf3","/_next/static/media/4aa1885bf83c1d46-s.woff2":"108dc1d8b31b40de487c42d7ec98dd3031959310ff8273308016ce51413cba3d","/_next/static/css/b7b0aa4a0a2d1fbe.css":"38a5021308e300866af4d7291e392b3c7e08b862bda7fbba74faee83f9252c63","/_next/static/media/10020a8c5cd83a9c-s.woff2":"e99783fc38e3e52fb8fee28520f6aec9a822567c6bfe0c50b41161a660091a0e","/_next/static/media/5617f5a793538eec-s.p.woff2":"e763e35e5d6635e175357bde5e5f02c5269ca265e79501b4c2a35d83e2e06bfd","/_next/static/media/26e111bc0bbb9793-s.woff2":"a0558fbb15998d6a9c730fb490c41247620366f709f63fe9738399c0c552f16d","/_next/static/media/5e8b7a5e87615adf-s.woff2":"9dfa1d2c0b9d7b73e9fa4bd0e4817108434d285de617876c14454c092f7aa931","/img/growth.jpg":"a389441d6e4c1a6acfd0fffcf81d5e477e0b9769b62ae6f7039c6544831aa2c9","/img/optimize.jpg":"2a4ebc00d1ebcf4e4634a0fe0d36cd1ddcce9763ef5ea17866554392332e7969","/img/develop.jpg":"81b02421c785016633bc5874875e172181d7144120aaa229ff8a5d1054790ceb","/img/logos/html.png":"492f77d8286903200f8307327357ff21ea4b77e05511766c615e529d71fe059b","/img/winnie-2.png":"2b27c21f3c181de1d452b0fee29abc8999f45e9e1f9faba5f18bc0e545056041","/img/logos/wordpress.png":"d85f94679a413861755e184281bfe43366172ea82d7ab3733eaa8c7f2ad61def","/_next/static/media/1d0c179378730186-s.woff2":"b3f8fd80ecb19d199538f41e87cecddc01bdf8e7eac8cd93eacfa4d6035020c6","/_next/static/media/7806ef5df85cda4a-s.woff2":"ed37e80392d202b123afc6b8d6355018b4da410153b5d306081dec253e627863","/_next/static/media/7b16d6bf437d2efc-s.woff2":"8984e6d3ea26ab41539951012e5ee258a66405131fc23c1201ebdff8b4a7c69e","/img/stas.jpg":"fa8c29debeaa8f97310f59ed5cb33af9a1943dcc464e16ecd8df810d3850c7a9","/_next/static/chunks/294-bee460b813bb0b61.js":"df5fffb966147a05a26a1fb2d8f79a7a606e730e31a18ed5665287980f4de7af","/_next/static/chunks/596-d0c4f7373d649f05.js":"fdab609f6c916aecd69f3b007299039c0be630345f24b0a714d0fa4bd2142440","/_next/static/chunks/main-583a4d077d7689dd.js":"99abee3b306d3d5fabfe4d21913c6138a3d0844fb7c2d901dada246a341449c8","/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js":"e03eafd0ebda24c0d0ec94e727fcce15281add86d3a3da865b9dccd05ddbb0ba","/_next/static/media/0ad5d54e4e8ec124-s.woff2":"c48a2642678fc6256df14f8118849b27e05765ddd44ef7cf891307feb6c9e381","/_next/static/media/a618eac368a06b46-s.woff2":"ae6ae72e300ef724beca78aa7e297f61fb2c2b081a8ef9e676c6f9b3b64a862d","/_next/static/media/a1a5feb80ccc142f-s.p.woff2":"27cc624a454b92af0d28b2afcdf7b987e2ed2fe2f635d736c074138538116e8e","/_next/static/media/a730c2098cf2d406-s.woff2":"8e168cbe6ba1c3ccdbd7d1d3105c3780d9ff6230556e32295e84d1670c0feaf0","/_next/static/media/a644c34479f999f6-s.woff2":"270260365a7fa3c0653435bdd6fc3a266e0eedd275fb81aa6553a9d915bbd00c","/_next/static/media/ac590a4a811bfa12-s.woff2":"7b667fc5973f9df3d2cd015ea39963b80d4fe890da57a721392534a92abd072b","/_next/static/media/cbac608cb004e0e5-s.woff2":"e7a9873fdc76a128dc7ba6e34d3cde38cf7872ca3e2117f17eb9482b2374eb16","/_next/static/media/ce5675ba4481ec73-s.woff2":"1c1805e810218968bbaa36fe21310d8935d0927c671744d788da928aa9a4c5b0","/_next/static/media/d1efd2a880aff16c-s.woff2":"4d3143359d690b9a352de874b3f5519dcbd01132818bbe3a9768358ed7d7e53f","/_next/static/media/css.583c04a3.png":"2bf6f39ed9b734010000f311c0f06ff25fece11243e20ade6369b5d42d194767","/_next/static/media/js.4593eeaa.png":"3939c7aaba366e227f56178311d5fd3e73e8bcaa969bda3f45d3526f96478422","/_next/static/media/nextjs.f04ab0c5.png":"c17259c3c829f0b36dc12b302022e49fefc8acbeeaa4fd62e7c7ea482568c0bb","/_next/static/media/node.7da468e1.png":"f84fba27bee979ec45e99e1573a23f560d618046d1496134e59b9cad9fb6d24a","/_next/static/media/opencart.96c78c0f.png":"aac6c9660066fb4eb661ce10f6ae1599c938414fad052512ed9f0b1fcae81ae2","/_next/static/media/php.51a3ad31.png":"240fea35dd874f72e09647c14fd1801ae6dba384dd7a57347cfcee6f463f6f0d","/_next/static/media/ts.b61a21b9.png":"9c11022648dfcdcb2adb3c2ad0d80263ef7473254716ff462f609f9b2a439700","/_next/static/media/woo.d45d7ec9.png":"ab78322a359427f8e17cfce41031822b54f7c5537e4442fc8fba7dcd9386ab44","/_next/static/zR9ou8xUBTUpUXJ-EYcMX/_buildManifest.js":"614b97202f9a54f964da446ee8b30479cc6c7e79c79337bf131b7488da175ca4","/_next/static/zR9ou8xUBTUpUXJ-EYcMX/_ssgManifest.js":"f1c3ccc94ee3b80435bb9784a4b25b89a1b6a6ff29c4bdb56a0deb9ad0b4dca5","/_next/static/chunks/framework-8883d1e9be70c3da.js":"56d86a8b51c6cfcc715a9a6a286cd7ebd239f8866e4eef4750191569aea39d56","/_next/static/media/86004ec718de9cb1-s.woff2":"277fd6a1ae30a00216ff18048a06e3041f409dd4fc3f8a88e2b6c93a66ee4338","/_next/static/media/e1dc9e24678282b7-s.p.woff2":"3673b90d8a1376cb99f3c5951e1378541091b14bd2fa45d1acfad5743fdad1a0","/_next/static/media/e7c7dbb62ddcf6fa-s.woff2":"7681ea9295eccb10c02b575854b290d5f4466ff77069dfd298b75062ee245187","/_next/static/media/develop.82c45f0f.jpg":"81b02421c785016633bc5874875e172181d7144120aaa229ff8a5d1054790ceb","/_next/static/media/html.d2d91b30.png":"492f77d8286903200f8307327357ff21ea4b77e05511766c615e529d71fe059b","/_next/static/media/optimize.11281750.jpg":"2a4ebc00d1ebcf4e4634a0fe0d36cd1ddcce9763ef5ea17866554392332e7969","/_next/static/media/growth.9e65b726.jpg":"a389441d6e4c1a6acfd0fffcf81d5e477e0b9769b62ae6f7039c6544831aa2c9","/_next/static/media/winnie-2.4d229c59.png":"2b27c21f3c181de1d452b0fee29abc8999f45e9e1f9faba5f18bc0e545056041","/_next/static/media/wordpress.bc306ab5.png":"d85f94679a413861755e184281bfe43366172ea82d7ab3733eaa8c7f2ad61def","/_next/static/chunks/fd9d1056-c34c6f34d660ba8f.js":"d751eb2494549546567529aafc2bc33645ca9616f9ce29c9d47047922f7de254","/img/upgrade.jpg":"6261fa95263e6ae057fd9eb6b88a3b4f5264436676a7956c5b1c639be63684f6","/_next/static/media/stas.73341978.jpg":"fa8c29debeaa8f97310f59ed5cb33af9a1943dcc464e16ecd8df810d3850c7a9","/files/resume-en.pdf":"70e13ac3878e51416d0e1ec0640758b1893ca705464341f799295981c1127b41","/_next/static/media/upgrade.075a9c05.jpg":"6261fa95263e6ae057fd9eb6b88a3b4f5264436676a7956c5b1c639be63684f6","/files/resume-uk.pdf":"ef3c9064c9fa776aa5f4e0817507449d9ac49ab1aa10809cb7c991da2d27a1bc"}}
+[debug] [2023-09-01T19:28:34.406Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/331790068292/sites/webdev-stas/versions/eb7fd525f86a164f:populateFiles 200
+[debug] [2023-09-01T19:28:34.406Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/331790068292/sites/webdev-stas/versions/eb7fd525f86a164f:populateFiles {"uploadRequiredHashes":["f187cb736a8e452acb7b56a52e1e56229ad7448a4d7bb456ba4faa1ad127479c","d85f94679a413861755e184281bfe43366172ea82d7ab3733eaa8c7f2ad61def","3673b90d8a1376cb99f3c5951e1378541091b14bd2fa45d1acfad5743fdad1a0","6d17ddadff6d077f76796d0dd2b292c6cde340e1e947735c8aec88ee17b03b68","93cb77eded40bbd6f45a348292a38a2c30a77a4ddf05d93096ff7ec313a7f240","26a3cb1072f78a222994eaf71415232edf36ab80ad7a40868910b20a161001bc","4d1080e92bcf158eaee911cd12e1f0bb8471d543f7e56994acd7b8e2c9f9a7b7","b3f8fd80ecb19d199538f41e87cecddc01bdf8e7eac8cd93eacfa4d6035020c6","50b72b9c5a1ea1a40b4ca38d7da5488bf23f50ab4a687d7a021319a23bb62e73","2b27c21f3c181de1d452b0fee29abc8999f45e9e1f9faba5f18bc0e545056041","e763e35e5d6635e175357bde5e5f02c5269ca265e79501b4c2a35d83e2e06bfd","0d1b49f72e16715f65ae579d25a6c8a8e40d9fe0b313bfaf02b0b9e69f102663","fa8c29debeaa8f97310f59ed5cb33af9a1943dcc464e16ecd8df810d3850c7a9","c48a2642678fc6256df14f8118849b27e05765ddd44ef7cf891307feb6c9e381","27cc624a454b92af0d28b2afcdf7b987e2ed2fe2f635d736c074138538116e8e","df5fffb966147a05a26a1fb2d8f79a7a606e730e31a18ed5665287980f4de7af","1c1805e810218968bbaa36fe21310d8935d0927c671744d788da928aa9a4c5b0","3939c7aaba366e227f56178311d5fd3e73e8bcaa969bda3f45d3526f96478422","81b02421c785016633bc5874875e172181d7144120aaa229ff8a5d1054790ceb","43127f4210c52bcd0f30f291f1ee296ab41ddd1566905dc27fe1129e0175c8f1","7b667fc5973f9df3d2cd015ea39963b80d4fe890da57a721392534a92abd072b","8e168cbe6ba1c3ccdbd7d1d3105c3780d9ff6230556e32295e84d1670c0feaf0","0f382dd04026f9a9b15ca5ab1ed07ab9cebb31828dadea8aef289b5d3ff1dcf3","fdab609f6c916aecd69f3b007299039c0be630345f24b0a714d0fa4bd2142440","270260365a7fa3c0653435bdd6fc3a266e0eedd275fb81aa6553a9d915bbd00c","8984e6d3ea26ab41539951012e5ee258a66405131fc23c1201ebdff8b4a7c69e","a389441d6e4c1a6acfd0fffcf81d5e477e0b9769b62ae6f7039c6544831aa2c9","2a4ebc00d1ebcf4e4634a0fe0d36cd1ddcce9763ef5ea17866554392332e7969","453801d2b4663556a995573eb653e3287611a5f348c3efb91afe95a1c518063d","ab78322a359427f8e17cfce41031822b54f7c5537e4442fc8fba7dcd9386ab44","ae6ae72e300ef724beca78aa7e297f61fb2c2b081a8ef9e676c6f9b3b64a862d","b701adbd6eab2826da7700a9d5f5fe0fdb6b21e3b7bb6947b5de3f1384c92ff9","cd9ea297f5a9e1c49fe0baae7fd29501f183d329c6f5fe0882b59e1b5fdd91af","e99783fc38e3e52fb8fee28520f6aec9a822567c6bfe0c50b41161a660091a0e","f1c3ccc94ee3b80435bb9784a4b25b89a1b6a6ff29c4bdb56a0deb9ad0b4dca5","167c2d55e4b603d579dc83e5a16a31a462e08879ffe9757cd90af10605a5653d","7681ea9295eccb10c02b575854b290d5f4466ff77069dfd298b75062ee245187","38a5021308e300866af4d7291e392b3c7e08b862bda7fbba74faee83f9252c63","4d3143359d690b9a352de874b3f5519dcbd01132818bbe3a9768358ed7d7e53f","277fd6a1ae30a00216ff18048a06e3041f409dd4fc3f8a88e2b6c93a66ee4338","614b97202f9a54f964da446ee8b30479cc6c7e79c79337bf131b7488da175ca4","221a1eb7bdc4cf68942a45068d738e92ce90b5458ff83876e1d5f5e5ada52971","2c86592bf57245e63ddaa1303d91245f5f8b4bbb0ac0f57e488e638eb4cf0964","492f77d8286903200f8307327357ff21ea4b77e05511766c615e529d71fe059b","99abee3b306d3d5fabfe4d21913c6138a3d0844fb7c2d901dada246a341449c8","108dc1d8b31b40de487c42d7ec98dd3031959310ff8273308016ce51413cba3d","a0558fbb15998d6a9c730fb490c41247620366f709f63fe9738399c0c552f16d","ef3c9064c9fa776aa5f4e0817507449d9ac49ab1aa10809cb7c991da2d27a1bc","70e13ac3878e51416d0e1ec0640758b1893ca705464341f799295981c1127b41","2bf6f39ed9b734010000f311c0f06ff25fece11243e20ade6369b5d42d194767","aac6c9660066fb4eb661ce10f6ae1599c938414fad052512ed9f0b1fcae81ae2","f84fba27bee979ec45e99e1573a23f560d618046d1496134e59b9cad9fb6d24a","ed37e80392d202b123afc6b8d6355018b4da410153b5d306081dec253e627863","9c11022648dfcdcb2adb3c2ad0d80263ef7473254716ff462f609f9b2a439700","56d86a8b51c6cfcc715a9a6a286cd7ebd239f8866e4eef4750191569aea39d56","c17259c3c829f0b36dc12b302022e49fefc8acbeeaa4fd62e7c7ea482568c0bb","e03eafd0ebda24c0d0ec94e727fcce15281add86d3a3da865b9dccd05ddbb0ba","d751eb2494549546567529aafc2bc33645ca9616f9ce29c9d47047922f7de254","6261fa95263e6ae057fd9eb6b88a3b4f5264436676a7956c5b1c639be63684f6","9dfa1d2c0b9d7b73e9fa4bd0e4817108434d285de617876c14454c092f7aa931","240fea35dd874f72e09647c14fd1801ae6dba384dd7a57347cfcee6f463f6f0d","e7a9873fdc76a128dc7ba6e34d3cde38cf7872ca3e2117f17eb9482b2374eb16","25f0e57f29b8d53b1e63d9e08df9d063dd50c84633a0fc66ef47350779c7ed41"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files"}
+[debug] [2023-09-01T19:28:34.412Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f187cb736a8e452acb7b56a52e1e56229ad7448a4d7bb456ba4faa1ad127479c [none]
+[debug] [2023-09-01T19:28:34.412Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f187cb736a8e452acb7b56a52e1e56229ad7448a4d7bb456ba4faa1ad127479c [stream]
+[debug] [2023-09-01T19:28:34.413Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/d85f94679a413861755e184281bfe43366172ea82d7ab3733eaa8c7f2ad61def [none]
+[debug] [2023-09-01T19:28:34.413Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/d85f94679a413861755e184281bfe43366172ea82d7ab3733eaa8c7f2ad61def [stream]
+[debug] [2023-09-01T19:28:34.414Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/3673b90d8a1376cb99f3c5951e1378541091b14bd2fa45d1acfad5743fdad1a0 [none]
+[debug] [2023-09-01T19:28:34.414Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/3673b90d8a1376cb99f3c5951e1378541091b14bd2fa45d1acfad5743fdad1a0 [stream]
+[debug] [2023-09-01T19:28:34.414Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/6d17ddadff6d077f76796d0dd2b292c6cde340e1e947735c8aec88ee17b03b68 [none]
+[debug] [2023-09-01T19:28:34.414Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/6d17ddadff6d077f76796d0dd2b292c6cde340e1e947735c8aec88ee17b03b68 [stream]
+[debug] [2023-09-01T19:28:34.415Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/93cb77eded40bbd6f45a348292a38a2c30a77a4ddf05d93096ff7ec313a7f240 [none]
+[debug] [2023-09-01T19:28:34.415Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/93cb77eded40bbd6f45a348292a38a2c30a77a4ddf05d93096ff7ec313a7f240 [stream]
+[debug] [2023-09-01T19:28:34.415Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/26a3cb1072f78a222994eaf71415232edf36ab80ad7a40868910b20a161001bc [none]
+[debug] [2023-09-01T19:28:34.416Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/26a3cb1072f78a222994eaf71415232edf36ab80ad7a40868910b20a161001bc [stream]
+[debug] [2023-09-01T19:28:34.417Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/4d1080e92bcf158eaee911cd12e1f0bb8471d543f7e56994acd7b8e2c9f9a7b7 [none]
+[debug] [2023-09-01T19:28:34.417Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/4d1080e92bcf158eaee911cd12e1f0bb8471d543f7e56994acd7b8e2c9f9a7b7 [stream]
+[debug] [2023-09-01T19:28:34.418Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/b3f8fd80ecb19d199538f41e87cecddc01bdf8e7eac8cd93eacfa4d6035020c6 [none]
+[debug] [2023-09-01T19:28:34.418Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/b3f8fd80ecb19d199538f41e87cecddc01bdf8e7eac8cd93eacfa4d6035020c6 [stream]
+[debug] [2023-09-01T19:28:34.419Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/50b72b9c5a1ea1a40b4ca38d7da5488bf23f50ab4a687d7a021319a23bb62e73 [none]
+[debug] [2023-09-01T19:28:34.419Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/50b72b9c5a1ea1a40b4ca38d7da5488bf23f50ab4a687d7a021319a23bb62e73 [stream]
+[debug] [2023-09-01T19:28:34.420Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2b27c21f3c181de1d452b0fee29abc8999f45e9e1f9faba5f18bc0e545056041 [none]
+[debug] [2023-09-01T19:28:34.420Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2b27c21f3c181de1d452b0fee29abc8999f45e9e1f9faba5f18bc0e545056041 [stream]
+[debug] [2023-09-01T19:28:34.421Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e763e35e5d6635e175357bde5e5f02c5269ca265e79501b4c2a35d83e2e06bfd [none]
+[debug] [2023-09-01T19:28:34.421Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e763e35e5d6635e175357bde5e5f02c5269ca265e79501b4c2a35d83e2e06bfd [stream]
+[debug] [2023-09-01T19:28:34.422Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/0d1b49f72e16715f65ae579d25a6c8a8e40d9fe0b313bfaf02b0b9e69f102663 [none]
+[debug] [2023-09-01T19:28:34.422Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/0d1b49f72e16715f65ae579d25a6c8a8e40d9fe0b313bfaf02b0b9e69f102663 [stream]
+[debug] [2023-09-01T19:28:34.422Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/fa8c29debeaa8f97310f59ed5cb33af9a1943dcc464e16ecd8df810d3850c7a9 [none]
+[debug] [2023-09-01T19:28:34.422Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/fa8c29debeaa8f97310f59ed5cb33af9a1943dcc464e16ecd8df810d3850c7a9 [stream]
+[debug] [2023-09-01T19:28:34.424Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/c48a2642678fc6256df14f8118849b27e05765ddd44ef7cf891307feb6c9e381 [none]
+[debug] [2023-09-01T19:28:34.424Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/c48a2642678fc6256df14f8118849b27e05765ddd44ef7cf891307feb6c9e381 [stream]
+[debug] [2023-09-01T19:28:34.427Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/27cc624a454b92af0d28b2afcdf7b987e2ed2fe2f635d736c074138538116e8e [none]
+[debug] [2023-09-01T19:28:34.428Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/27cc624a454b92af0d28b2afcdf7b987e2ed2fe2f635d736c074138538116e8e [stream]
+[debug] [2023-09-01T19:28:34.428Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/df5fffb966147a05a26a1fb2d8f79a7a606e730e31a18ed5665287980f4de7af [none]
+[debug] [2023-09-01T19:28:34.428Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/df5fffb966147a05a26a1fb2d8f79a7a606e730e31a18ed5665287980f4de7af [stream]
+[debug] [2023-09-01T19:28:34.429Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/1c1805e810218968bbaa36fe21310d8935d0927c671744d788da928aa9a4c5b0 [none]
+[debug] [2023-09-01T19:28:34.429Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/1c1805e810218968bbaa36fe21310d8935d0927c671744d788da928aa9a4c5b0 [stream]
+[debug] [2023-09-01T19:28:34.429Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/3939c7aaba366e227f56178311d5fd3e73e8bcaa969bda3f45d3526f96478422 [none]
+[debug] [2023-09-01T19:28:34.429Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/3939c7aaba366e227f56178311d5fd3e73e8bcaa969bda3f45d3526f96478422 [stream]
+[debug] [2023-09-01T19:28:34.430Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/81b02421c785016633bc5874875e172181d7144120aaa229ff8a5d1054790ceb [none]
+[debug] [2023-09-01T19:28:34.430Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/81b02421c785016633bc5874875e172181d7144120aaa229ff8a5d1054790ceb [stream]
+[debug] [2023-09-01T19:28:34.430Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/43127f4210c52bcd0f30f291f1ee296ab41ddd1566905dc27fe1129e0175c8f1 [none]
+[debug] [2023-09-01T19:28:34.430Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/43127f4210c52bcd0f30f291f1ee296ab41ddd1566905dc27fe1129e0175c8f1 [stream]
+[debug] [2023-09-01T19:28:34.431Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/7b667fc5973f9df3d2cd015ea39963b80d4fe890da57a721392534a92abd072b [none]
+[debug] [2023-09-01T19:28:34.431Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/7b667fc5973f9df3d2cd015ea39963b80d4fe890da57a721392534a92abd072b [stream]
+[debug] [2023-09-01T19:28:34.431Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/8e168cbe6ba1c3ccdbd7d1d3105c3780d9ff6230556e32295e84d1670c0feaf0 [none]
+[debug] [2023-09-01T19:28:34.431Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/8e168cbe6ba1c3ccdbd7d1d3105c3780d9ff6230556e32295e84d1670c0feaf0 [stream]
+[debug] [2023-09-01T19:28:34.432Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/0f382dd04026f9a9b15ca5ab1ed07ab9cebb31828dadea8aef289b5d3ff1dcf3 [none]
+[debug] [2023-09-01T19:28:34.432Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/0f382dd04026f9a9b15ca5ab1ed07ab9cebb31828dadea8aef289b5d3ff1dcf3 [stream]
+[debug] [2023-09-01T19:28:34.432Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/fdab609f6c916aecd69f3b007299039c0be630345f24b0a714d0fa4bd2142440 [none]
+[debug] [2023-09-01T19:28:34.432Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/fdab609f6c916aecd69f3b007299039c0be630345f24b0a714d0fa4bd2142440 [stream]
+[debug] [2023-09-01T19:28:34.433Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/270260365a7fa3c0653435bdd6fc3a266e0eedd275fb81aa6553a9d915bbd00c [none]
+[debug] [2023-09-01T19:28:34.433Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/270260365a7fa3c0653435bdd6fc3a266e0eedd275fb81aa6553a9d915bbd00c [stream]
+[debug] [2023-09-01T19:28:34.433Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/8984e6d3ea26ab41539951012e5ee258a66405131fc23c1201ebdff8b4a7c69e [none]
+[debug] [2023-09-01T19:28:34.433Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/8984e6d3ea26ab41539951012e5ee258a66405131fc23c1201ebdff8b4a7c69e [stream]
+[debug] [2023-09-01T19:28:34.434Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/a389441d6e4c1a6acfd0fffcf81d5e477e0b9769b62ae6f7039c6544831aa2c9 [none]
+[debug] [2023-09-01T19:28:34.434Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/a389441d6e4c1a6acfd0fffcf81d5e477e0b9769b62ae6f7039c6544831aa2c9 [stream]
+[debug] [2023-09-01T19:28:34.434Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2a4ebc00d1ebcf4e4634a0fe0d36cd1ddcce9763ef5ea17866554392332e7969 [none]
+[debug] [2023-09-01T19:28:34.434Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2a4ebc00d1ebcf4e4634a0fe0d36cd1ddcce9763ef5ea17866554392332e7969 [stream]
+[debug] [2023-09-01T19:28:34.435Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/453801d2b4663556a995573eb653e3287611a5f348c3efb91afe95a1c518063d [none]
+[debug] [2023-09-01T19:28:34.435Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/453801d2b4663556a995573eb653e3287611a5f348c3efb91afe95a1c518063d [stream]
+[debug] [2023-09-01T19:28:34.436Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ab78322a359427f8e17cfce41031822b54f7c5537e4442fc8fba7dcd9386ab44 [none]
+[debug] [2023-09-01T19:28:34.436Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ab78322a359427f8e17cfce41031822b54f7c5537e4442fc8fba7dcd9386ab44 [stream]
+[debug] [2023-09-01T19:28:34.436Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ae6ae72e300ef724beca78aa7e297f61fb2c2b081a8ef9e676c6f9b3b64a862d [none]
+[debug] [2023-09-01T19:28:34.436Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ae6ae72e300ef724beca78aa7e297f61fb2c2b081a8ef9e676c6f9b3b64a862d [stream]
+[debug] [2023-09-01T19:28:34.437Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/b701adbd6eab2826da7700a9d5f5fe0fdb6b21e3b7bb6947b5de3f1384c92ff9 [none]
+[debug] [2023-09-01T19:28:34.437Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/b701adbd6eab2826da7700a9d5f5fe0fdb6b21e3b7bb6947b5de3f1384c92ff9 [stream]
+[debug] [2023-09-01T19:28:34.438Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/cd9ea297f5a9e1c49fe0baae7fd29501f183d329c6f5fe0882b59e1b5fdd91af [none]
+[debug] [2023-09-01T19:28:34.438Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/cd9ea297f5a9e1c49fe0baae7fd29501f183d329c6f5fe0882b59e1b5fdd91af [stream]
+[debug] [2023-09-01T19:28:34.438Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e99783fc38e3e52fb8fee28520f6aec9a822567c6bfe0c50b41161a660091a0e [none]
+[debug] [2023-09-01T19:28:34.438Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e99783fc38e3e52fb8fee28520f6aec9a822567c6bfe0c50b41161a660091a0e [stream]
+[debug] [2023-09-01T19:28:34.440Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f1c3ccc94ee3b80435bb9784a4b25b89a1b6a6ff29c4bdb56a0deb9ad0b4dca5 [none]
+[debug] [2023-09-01T19:28:34.440Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f1c3ccc94ee3b80435bb9784a4b25b89a1b6a6ff29c4bdb56a0deb9ad0b4dca5 [stream]
+[debug] [2023-09-01T19:28:34.441Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/167c2d55e4b603d579dc83e5a16a31a462e08879ffe9757cd90af10605a5653d [none]
+[debug] [2023-09-01T19:28:34.441Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/167c2d55e4b603d579dc83e5a16a31a462e08879ffe9757cd90af10605a5653d [stream]
+[debug] [2023-09-01T19:28:34.441Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/7681ea9295eccb10c02b575854b290d5f4466ff77069dfd298b75062ee245187 [none]
+[debug] [2023-09-01T19:28:34.441Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/7681ea9295eccb10c02b575854b290d5f4466ff77069dfd298b75062ee245187 [stream]
+[debug] [2023-09-01T19:28:34.442Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/38a5021308e300866af4d7291e392b3c7e08b862bda7fbba74faee83f9252c63 [none]
+[debug] [2023-09-01T19:28:34.442Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/38a5021308e300866af4d7291e392b3c7e08b862bda7fbba74faee83f9252c63 [stream]
+[debug] [2023-09-01T19:28:34.442Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/4d3143359d690b9a352de874b3f5519dcbd01132818bbe3a9768358ed7d7e53f [none]
+[debug] [2023-09-01T19:28:34.442Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/4d3143359d690b9a352de874b3f5519dcbd01132818bbe3a9768358ed7d7e53f [stream]
+[debug] [2023-09-01T19:28:34.443Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/277fd6a1ae30a00216ff18048a06e3041f409dd4fc3f8a88e2b6c93a66ee4338 [none]
+[debug] [2023-09-01T19:28:34.443Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/277fd6a1ae30a00216ff18048a06e3041f409dd4fc3f8a88e2b6c93a66ee4338 [stream]
+[debug] [2023-09-01T19:28:34.443Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/614b97202f9a54f964da446ee8b30479cc6c7e79c79337bf131b7488da175ca4 [none]
+[debug] [2023-09-01T19:28:34.443Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/614b97202f9a54f964da446ee8b30479cc6c7e79c79337bf131b7488da175ca4 [stream]
+[debug] [2023-09-01T19:28:34.444Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/221a1eb7bdc4cf68942a45068d738e92ce90b5458ff83876e1d5f5e5ada52971 [none]
+[debug] [2023-09-01T19:28:34.444Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/221a1eb7bdc4cf68942a45068d738e92ce90b5458ff83876e1d5f5e5ada52971 [stream]
+[debug] [2023-09-01T19:28:34.444Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2c86592bf57245e63ddaa1303d91245f5f8b4bbb0ac0f57e488e638eb4cf0964 [none]
+[debug] [2023-09-01T19:28:34.444Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2c86592bf57245e63ddaa1303d91245f5f8b4bbb0ac0f57e488e638eb4cf0964 [stream]
+[debug] [2023-09-01T19:28:34.445Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/492f77d8286903200f8307327357ff21ea4b77e05511766c615e529d71fe059b [none]
+[debug] [2023-09-01T19:28:34.445Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/492f77d8286903200f8307327357ff21ea4b77e05511766c615e529d71fe059b [stream]
+[debug] [2023-09-01T19:28:34.445Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/99abee3b306d3d5fabfe4d21913c6138a3d0844fb7c2d901dada246a341449c8 [none]
+[debug] [2023-09-01T19:28:34.445Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/99abee3b306d3d5fabfe4d21913c6138a3d0844fb7c2d901dada246a341449c8 [stream]
+[debug] [2023-09-01T19:28:34.445Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/108dc1d8b31b40de487c42d7ec98dd3031959310ff8273308016ce51413cba3d [none]
+[debug] [2023-09-01T19:28:34.446Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/108dc1d8b31b40de487c42d7ec98dd3031959310ff8273308016ce51413cba3d [stream]
+[debug] [2023-09-01T19:28:34.446Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/a0558fbb15998d6a9c730fb490c41247620366f709f63fe9738399c0c552f16d [none]
+[debug] [2023-09-01T19:28:34.446Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/a0558fbb15998d6a9c730fb490c41247620366f709f63fe9738399c0c552f16d [stream]
+[debug] [2023-09-01T19:28:34.446Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ef3c9064c9fa776aa5f4e0817507449d9ac49ab1aa10809cb7c991da2d27a1bc [none]
+[debug] [2023-09-01T19:28:34.446Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ef3c9064c9fa776aa5f4e0817507449d9ac49ab1aa10809cb7c991da2d27a1bc [stream]
+[debug] [2023-09-01T19:28:34.447Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/70e13ac3878e51416d0e1ec0640758b1893ca705464341f799295981c1127b41 [none]
+[debug] [2023-09-01T19:28:34.447Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/70e13ac3878e51416d0e1ec0640758b1893ca705464341f799295981c1127b41 [stream]
+[debug] [2023-09-01T19:28:34.447Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2bf6f39ed9b734010000f311c0f06ff25fece11243e20ade6369b5d42d194767 [none]
+[debug] [2023-09-01T19:28:34.447Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2bf6f39ed9b734010000f311c0f06ff25fece11243e20ade6369b5d42d194767 [stream]
+[debug] [2023-09-01T19:28:34.448Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/aac6c9660066fb4eb661ce10f6ae1599c938414fad052512ed9f0b1fcae81ae2 [none]
+[debug] [2023-09-01T19:28:34.448Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/aac6c9660066fb4eb661ce10f6ae1599c938414fad052512ed9f0b1fcae81ae2 [stream]
+[debug] [2023-09-01T19:28:34.448Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f84fba27bee979ec45e99e1573a23f560d618046d1496134e59b9cad9fb6d24a [none]
+[debug] [2023-09-01T19:28:34.448Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f84fba27bee979ec45e99e1573a23f560d618046d1496134e59b9cad9fb6d24a [stream]
+[debug] [2023-09-01T19:28:34.449Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ed37e80392d202b123afc6b8d6355018b4da410153b5d306081dec253e627863 [none]
+[debug] [2023-09-01T19:28:34.449Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ed37e80392d202b123afc6b8d6355018b4da410153b5d306081dec253e627863 [stream]
+[debug] [2023-09-01T19:28:34.449Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/9c11022648dfcdcb2adb3c2ad0d80263ef7473254716ff462f609f9b2a439700 [none]
+[debug] [2023-09-01T19:28:34.449Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/9c11022648dfcdcb2adb3c2ad0d80263ef7473254716ff462f609f9b2a439700 [stream]
+[debug] [2023-09-01T19:28:34.450Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/56d86a8b51c6cfcc715a9a6a286cd7ebd239f8866e4eef4750191569aea39d56 [none]
+[debug] [2023-09-01T19:28:34.450Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/56d86a8b51c6cfcc715a9a6a286cd7ebd239f8866e4eef4750191569aea39d56 [stream]
+[debug] [2023-09-01T19:28:34.450Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/c17259c3c829f0b36dc12b302022e49fefc8acbeeaa4fd62e7c7ea482568c0bb [none]
+[debug] [2023-09-01T19:28:34.451Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/c17259c3c829f0b36dc12b302022e49fefc8acbeeaa4fd62e7c7ea482568c0bb [stream]
+[debug] [2023-09-01T19:28:34.451Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e03eafd0ebda24c0d0ec94e727fcce15281add86d3a3da865b9dccd05ddbb0ba [none]
+[debug] [2023-09-01T19:28:34.451Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e03eafd0ebda24c0d0ec94e727fcce15281add86d3a3da865b9dccd05ddbb0ba [stream]
+[debug] [2023-09-01T19:28:34.452Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/d751eb2494549546567529aafc2bc33645ca9616f9ce29c9d47047922f7de254 [none]
+[debug] [2023-09-01T19:28:34.452Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/d751eb2494549546567529aafc2bc33645ca9616f9ce29c9d47047922f7de254 [stream]
+[debug] [2023-09-01T19:28:34.452Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/6261fa95263e6ae057fd9eb6b88a3b4f5264436676a7956c5b1c639be63684f6 [none]
+[debug] [2023-09-01T19:28:34.452Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/6261fa95263e6ae057fd9eb6b88a3b4f5264436676a7956c5b1c639be63684f6 [stream]
+[debug] [2023-09-01T19:28:34.453Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/9dfa1d2c0b9d7b73e9fa4bd0e4817108434d285de617876c14454c092f7aa931 [none]
+[debug] [2023-09-01T19:28:34.453Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/9dfa1d2c0b9d7b73e9fa4bd0e4817108434d285de617876c14454c092f7aa931 [stream]
+[debug] [2023-09-01T19:28:34.453Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/240fea35dd874f72e09647c14fd1801ae6dba384dd7a57347cfcee6f463f6f0d [none]
+[debug] [2023-09-01T19:28:34.453Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/240fea35dd874f72e09647c14fd1801ae6dba384dd7a57347cfcee6f463f6f0d [stream]
+[debug] [2023-09-01T19:28:34.454Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e7a9873fdc76a128dc7ba6e34d3cde38cf7872ca3e2117f17eb9482b2374eb16 [none]
+[debug] [2023-09-01T19:28:34.454Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e7a9873fdc76a128dc7ba6e34d3cde38cf7872ca3e2117f17eb9482b2374eb16 [stream]
+[debug] [2023-09-01T19:28:34.454Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/25f0e57f29b8d53b1e63d9e08df9d063dd50c84633a0fc66ef47350779c7ed41 [none]
+[debug] [2023-09-01T19:28:34.454Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/25f0e57f29b8d53b1e63d9e08df9d063dd50c84633a0fc66ef47350779c7ed41 [stream]
+[debug] [2023-09-01T19:28:34.455Z] [hosting][populate queue][FINAL] {"max":1127,"min":1127,"avg":1127,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1171}
+[debug] [2023-09-01T19:28:34.455Z] [hosting] uploads queued: 63
+[debug] [2023-09-01T19:28:35.741Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/0f382dd04026f9a9b15ca5ab1ed07ab9cebb31828dadea8aef289b5d3ff1dcf3 200
+[debug] [2023-09-01T19:28:35.741Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/0f382dd04026f9a9b15ca5ab1ed07ab9cebb31828dadea8aef289b5d3ff1dcf3 [stream]
+[debug] [2023-09-01T19:28:35.744Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/26a3cb1072f78a222994eaf71415232edf36ab80ad7a40868910b20a161001bc 200
+[debug] [2023-09-01T19:28:35.744Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/26a3cb1072f78a222994eaf71415232edf36ab80ad7a40868910b20a161001bc [stream]
+[debug] [2023-09-01T19:28:35.745Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e763e35e5d6635e175357bde5e5f02c5269ca265e79501b4c2a35d83e2e06bfd 200
+[debug] [2023-09-01T19:28:35.745Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e763e35e5d6635e175357bde5e5f02c5269ca265e79501b4c2a35d83e2e06bfd [stream]
+[debug] [2023-09-01T19:28:35.755Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f187cb736a8e452acb7b56a52e1e56229ad7448a4d7bb456ba4faa1ad127479c 200
+[debug] [2023-09-01T19:28:35.755Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f187cb736a8e452acb7b56a52e1e56229ad7448a4d7bb456ba4faa1ad127479c [stream]
+[debug] [2023-09-01T19:28:35.767Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/6d17ddadff6d077f76796d0dd2b292c6cde340e1e947735c8aec88ee17b03b68 200
+[debug] [2023-09-01T19:28:35.768Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/6d17ddadff6d077f76796d0dd2b292c6cde340e1e947735c8aec88ee17b03b68 [stream]
+[debug] [2023-09-01T19:28:35.772Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ab78322a359427f8e17cfce41031822b54f7c5537e4442fc8fba7dcd9386ab44 200
+[debug] [2023-09-01T19:28:35.772Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ab78322a359427f8e17cfce41031822b54f7c5537e4442fc8fba7dcd9386ab44 [stream]
+[debug] [2023-09-01T19:28:35.772Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/108dc1d8b31b40de487c42d7ec98dd3031959310ff8273308016ce51413cba3d 200
+[debug] [2023-09-01T19:28:35.772Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/108dc1d8b31b40de487c42d7ec98dd3031959310ff8273308016ce51413cba3d [stream]
+[debug] [2023-09-01T19:28:35.772Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/1c1805e810218968bbaa36fe21310d8935d0927c671744d788da928aa9a4c5b0 200
+[debug] [2023-09-01T19:28:35.773Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/1c1805e810218968bbaa36fe21310d8935d0927c671744d788da928aa9a4c5b0 [stream]
+[debug] [2023-09-01T19:28:35.777Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/c17259c3c829f0b36dc12b302022e49fefc8acbeeaa4fd62e7c7ea482568c0bb 200
+[debug] [2023-09-01T19:28:35.777Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/c17259c3c829f0b36dc12b302022e49fefc8acbeeaa4fd62e7c7ea482568c0bb [stream]
+[debug] [2023-09-01T19:28:35.798Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/167c2d55e4b603d579dc83e5a16a31a462e08879ffe9757cd90af10605a5653d 200
+[debug] [2023-09-01T19:28:35.798Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/167c2d55e4b603d579dc83e5a16a31a462e08879ffe9757cd90af10605a5653d [stream]
+[debug] [2023-09-01T19:28:35.799Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/3673b90d8a1376cb99f3c5951e1378541091b14bd2fa45d1acfad5743fdad1a0 200
+[debug] [2023-09-01T19:28:35.799Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/3673b90d8a1376cb99f3c5951e1378541091b14bd2fa45d1acfad5743fdad1a0 [stream]
+[debug] [2023-09-01T19:28:35.799Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/b701adbd6eab2826da7700a9d5f5fe0fdb6b21e3b7bb6947b5de3f1384c92ff9 200
+[debug] [2023-09-01T19:28:35.799Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/b701adbd6eab2826da7700a9d5f5fe0fdb6b21e3b7bb6947b5de3f1384c92ff9 [stream]
+[debug] [2023-09-01T19:28:35.800Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/27cc624a454b92af0d28b2afcdf7b987e2ed2fe2f635d736c074138538116e8e 200
+[debug] [2023-09-01T19:28:35.800Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/27cc624a454b92af0d28b2afcdf7b987e2ed2fe2f635d736c074138538116e8e [stream]
+[debug] [2023-09-01T19:28:35.826Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/93cb77eded40bbd6f45a348292a38a2c30a77a4ddf05d93096ff7ec313a7f240 200
+[debug] [2023-09-01T19:28:35.826Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/93cb77eded40bbd6f45a348292a38a2c30a77a4ddf05d93096ff7ec313a7f240 [stream]
+[debug] [2023-09-01T19:28:35.840Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/614b97202f9a54f964da446ee8b30479cc6c7e79c79337bf131b7488da175ca4 200
+[debug] [2023-09-01T19:28:35.840Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/614b97202f9a54f964da446ee8b30479cc6c7e79c79337bf131b7488da175ca4 [stream]
+[debug] [2023-09-01T19:28:35.846Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2b27c21f3c181de1d452b0fee29abc8999f45e9e1f9faba5f18bc0e545056041 200
+[debug] [2023-09-01T19:28:35.846Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2b27c21f3c181de1d452b0fee29abc8999f45e9e1f9faba5f18bc0e545056041 [stream]
+[debug] [2023-09-01T19:28:35.846Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/8e168cbe6ba1c3ccdbd7d1d3105c3780d9ff6230556e32295e84d1670c0feaf0 200
+[debug] [2023-09-01T19:28:35.846Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/8e168cbe6ba1c3ccdbd7d1d3105c3780d9ff6230556e32295e84d1670c0feaf0 [stream]
+[debug] [2023-09-01T19:28:35.847Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f84fba27bee979ec45e99e1573a23f560d618046d1496134e59b9cad9fb6d24a 200
+[debug] [2023-09-01T19:28:35.847Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f84fba27bee979ec45e99e1573a23f560d618046d1496134e59b9cad9fb6d24a [stream]
+[debug] [2023-09-01T19:28:35.847Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/3939c7aaba366e227f56178311d5fd3e73e8bcaa969bda3f45d3526f96478422 200
+[debug] [2023-09-01T19:28:35.847Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/3939c7aaba366e227f56178311d5fd3e73e8bcaa969bda3f45d3526f96478422 [stream]
+[debug] [2023-09-01T19:28:35.848Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/25f0e57f29b8d53b1e63d9e08df9d063dd50c84633a0fc66ef47350779c7ed41 200
+[debug] [2023-09-01T19:28:35.848Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/25f0e57f29b8d53b1e63d9e08df9d063dd50c84633a0fc66ef47350779c7ed41 [stream]
+[debug] [2023-09-01T19:28:35.848Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/0d1b49f72e16715f65ae579d25a6c8a8e40d9fe0b313bfaf02b0b9e69f102663 200
+[debug] [2023-09-01T19:28:35.848Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/0d1b49f72e16715f65ae579d25a6c8a8e40d9fe0b313bfaf02b0b9e69f102663 [stream]
+[debug] [2023-09-01T19:28:35.881Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/7b667fc5973f9df3d2cd015ea39963b80d4fe890da57a721392534a92abd072b 200
+[debug] [2023-09-01T19:28:35.881Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/7b667fc5973f9df3d2cd015ea39963b80d4fe890da57a721392534a92abd072b [stream]
+[debug] [2023-09-01T19:28:35.882Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2c86592bf57245e63ddaa1303d91245f5f8b4bbb0ac0f57e488e638eb4cf0964 200
+[debug] [2023-09-01T19:28:35.882Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2c86592bf57245e63ddaa1303d91245f5f8b4bbb0ac0f57e488e638eb4cf0964 [stream]
+[debug] [2023-09-01T19:28:35.882Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e03eafd0ebda24c0d0ec94e727fcce15281add86d3a3da865b9dccd05ddbb0ba 200
+[debug] [2023-09-01T19:28:35.882Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e03eafd0ebda24c0d0ec94e727fcce15281add86d3a3da865b9dccd05ddbb0ba [stream]
+[debug] [2023-09-01T19:28:35.883Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/50b72b9c5a1ea1a40b4ca38d7da5488bf23f50ab4a687d7a021319a23bb62e73 200
+[debug] [2023-09-01T19:28:35.883Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/50b72b9c5a1ea1a40b4ca38d7da5488bf23f50ab4a687d7a021319a23bb62e73 [stream]
+[debug] [2023-09-01T19:28:35.894Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/fdab609f6c916aecd69f3b007299039c0be630345f24b0a714d0fa4bd2142440 200
+[debug] [2023-09-01T19:28:35.895Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/fdab609f6c916aecd69f3b007299039c0be630345f24b0a714d0fa4bd2142440 [stream]
+[debug] [2023-09-01T19:28:35.900Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/c48a2642678fc6256df14f8118849b27e05765ddd44ef7cf891307feb6c9e381 200
+[debug] [2023-09-01T19:28:35.900Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/c48a2642678fc6256df14f8118849b27e05765ddd44ef7cf891307feb6c9e381 [stream]
+[debug] [2023-09-01T19:28:35.901Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f1c3ccc94ee3b80435bb9784a4b25b89a1b6a6ff29c4bdb56a0deb9ad0b4dca5 200
+[debug] [2023-09-01T19:28:35.902Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/f1c3ccc94ee3b80435bb9784a4b25b89a1b6a6ff29c4bdb56a0deb9ad0b4dca5 [stream]
+[debug] [2023-09-01T19:28:35.902Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/a0558fbb15998d6a9c730fb490c41247620366f709f63fe9738399c0c552f16d 200
+[debug] [2023-09-01T19:28:35.902Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/a0558fbb15998d6a9c730fb490c41247620366f709f63fe9738399c0c552f16d [stream]
+[debug] [2023-09-01T19:28:35.903Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/38a5021308e300866af4d7291e392b3c7e08b862bda7fbba74faee83f9252c63 200
+[debug] [2023-09-01T19:28:35.903Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/38a5021308e300866af4d7291e392b3c7e08b862bda7fbba74faee83f9252c63 [stream]
+[debug] [2023-09-01T19:28:35.903Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ae6ae72e300ef724beca78aa7e297f61fb2c2b081a8ef9e676c6f9b3b64a862d 200
+[debug] [2023-09-01T19:28:35.903Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ae6ae72e300ef724beca78aa7e297f61fb2c2b081a8ef9e676c6f9b3b64a862d [stream]
+[debug] [2023-09-01T19:28:35.904Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/270260365a7fa3c0653435bdd6fc3a266e0eedd275fb81aa6553a9d915bbd00c 200
+[debug] [2023-09-01T19:28:35.904Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/270260365a7fa3c0653435bdd6fc3a266e0eedd275fb81aa6553a9d915bbd00c [stream]
+[debug] [2023-09-01T19:28:35.905Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/aac6c9660066fb4eb661ce10f6ae1599c938414fad052512ed9f0b1fcae81ae2 200
+[debug] [2023-09-01T19:28:35.905Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/aac6c9660066fb4eb661ce10f6ae1599c938414fad052512ed9f0b1fcae81ae2 [stream]
+[debug] [2023-09-01T19:28:35.906Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/453801d2b4663556a995573eb653e3287611a5f348c3efb91afe95a1c518063d 200
+[debug] [2023-09-01T19:28:35.906Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/453801d2b4663556a995573eb653e3287611a5f348c3efb91afe95a1c518063d [stream]
+[debug] [2023-09-01T19:28:35.906Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/56d86a8b51c6cfcc715a9a6a286cd7ebd239f8866e4eef4750191569aea39d56 200
+[debug] [2023-09-01T19:28:35.906Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/56d86a8b51c6cfcc715a9a6a286cd7ebd239f8866e4eef4750191569aea39d56 [stream]
+[debug] [2023-09-01T19:28:35.906Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/99abee3b306d3d5fabfe4d21913c6138a3d0844fb7c2d901dada246a341449c8 200
+[debug] [2023-09-01T19:28:35.906Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/99abee3b306d3d5fabfe4d21913c6138a3d0844fb7c2d901dada246a341449c8 [stream]
+[debug] [2023-09-01T19:28:35.907Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/221a1eb7bdc4cf68942a45068d738e92ce90b5458ff83876e1d5f5e5ada52971 200
+[debug] [2023-09-01T19:28:35.907Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/221a1eb7bdc4cf68942a45068d738e92ce90b5458ff83876e1d5f5e5ada52971 [stream]
+[debug] [2023-09-01T19:28:35.907Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2a4ebc00d1ebcf4e4634a0fe0d36cd1ddcce9763ef5ea17866554392332e7969 200
+[debug] [2023-09-01T19:28:35.907Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2a4ebc00d1ebcf4e4634a0fe0d36cd1ddcce9763ef5ea17866554392332e7969 [stream]
+[debug] [2023-09-01T19:28:35.907Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/fa8c29debeaa8f97310f59ed5cb33af9a1943dcc464e16ecd8df810d3850c7a9 200
+[debug] [2023-09-01T19:28:35.907Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/fa8c29debeaa8f97310f59ed5cb33af9a1943dcc464e16ecd8df810d3850c7a9 [stream]
+[debug] [2023-09-01T19:28:35.908Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2bf6f39ed9b734010000f311c0f06ff25fece11243e20ade6369b5d42d194767 200
+[debug] [2023-09-01T19:28:35.908Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/2bf6f39ed9b734010000f311c0f06ff25fece11243e20ade6369b5d42d194767 [stream]
+[debug] [2023-09-01T19:28:35.908Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/9dfa1d2c0b9d7b73e9fa4bd0e4817108434d285de617876c14454c092f7aa931 200
+[debug] [2023-09-01T19:28:35.908Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/9dfa1d2c0b9d7b73e9fa4bd0e4817108434d285de617876c14454c092f7aa931 [stream]
+[debug] [2023-09-01T19:28:35.908Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/df5fffb966147a05a26a1fb2d8f79a7a606e730e31a18ed5665287980f4de7af 200
+[debug] [2023-09-01T19:28:35.908Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/df5fffb966147a05a26a1fb2d8f79a7a606e730e31a18ed5665287980f4de7af [stream]
+[debug] [2023-09-01T19:28:35.909Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/9c11022648dfcdcb2adb3c2ad0d80263ef7473254716ff462f609f9b2a439700 200
+[debug] [2023-09-01T19:28:35.909Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/9c11022648dfcdcb2adb3c2ad0d80263ef7473254716ff462f609f9b2a439700 [stream]
+[debug] [2023-09-01T19:28:35.920Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/b3f8fd80ecb19d199538f41e87cecddc01bdf8e7eac8cd93eacfa4d6035020c6 200
+[debug] [2023-09-01T19:28:35.921Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/b3f8fd80ecb19d199538f41e87cecddc01bdf8e7eac8cd93eacfa4d6035020c6 [stream]
+[debug] [2023-09-01T19:28:35.927Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/8984e6d3ea26ab41539951012e5ee258a66405131fc23c1201ebdff8b4a7c69e 200
+[debug] [2023-09-01T19:28:35.927Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/8984e6d3ea26ab41539951012e5ee258a66405131fc23c1201ebdff8b4a7c69e [stream]
+[debug] [2023-09-01T19:28:35.946Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/240fea35dd874f72e09647c14fd1801ae6dba384dd7a57347cfcee6f463f6f0d 200
+[debug] [2023-09-01T19:28:35.946Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/240fea35dd874f72e09647c14fd1801ae6dba384dd7a57347cfcee6f463f6f0d [stream]
+[debug] [2023-09-01T19:28:35.951Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/7681ea9295eccb10c02b575854b290d5f4466ff77069dfd298b75062ee245187 200
+[debug] [2023-09-01T19:28:35.951Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/7681ea9295eccb10c02b575854b290d5f4466ff77069dfd298b75062ee245187 [stream]
+[debug] [2023-09-01T19:28:36.004Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/81b02421c785016633bc5874875e172181d7144120aaa229ff8a5d1054790ceb 200
+[debug] [2023-09-01T19:28:36.004Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/81b02421c785016633bc5874875e172181d7144120aaa229ff8a5d1054790ceb [stream]
+[debug] [2023-09-01T19:28:36.039Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/4d3143359d690b9a352de874b3f5519dcbd01132818bbe3a9768358ed7d7e53f 200
+[debug] [2023-09-01T19:28:36.039Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/4d3143359d690b9a352de874b3f5519dcbd01132818bbe3a9768358ed7d7e53f [stream]
+[debug] [2023-09-01T19:28:36.040Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/cd9ea297f5a9e1c49fe0baae7fd29501f183d329c6f5fe0882b59e1b5fdd91af 200
+[debug] [2023-09-01T19:28:36.040Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/cd9ea297f5a9e1c49fe0baae7fd29501f183d329c6f5fe0882b59e1b5fdd91af [stream]
+[debug] [2023-09-01T19:28:36.061Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/277fd6a1ae30a00216ff18048a06e3041f409dd4fc3f8a88e2b6c93a66ee4338 200
+[debug] [2023-09-01T19:28:36.061Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/277fd6a1ae30a00216ff18048a06e3041f409dd4fc3f8a88e2b6c93a66ee4338 [stream]
+[debug] [2023-09-01T19:28:36.062Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ed37e80392d202b123afc6b8d6355018b4da410153b5d306081dec253e627863 200
+[debug] [2023-09-01T19:28:36.062Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ed37e80392d202b123afc6b8d6355018b4da410153b5d306081dec253e627863 [stream]
+[debug] [2023-09-01T19:28:36.062Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/4d1080e92bcf158eaee911cd12e1f0bb8471d543f7e56994acd7b8e2c9f9a7b7 200
+[debug] [2023-09-01T19:28:36.063Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/4d1080e92bcf158eaee911cd12e1f0bb8471d543f7e56994acd7b8e2c9f9a7b7 [stream]
+[debug] [2023-09-01T19:28:36.063Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e7a9873fdc76a128dc7ba6e34d3cde38cf7872ca3e2117f17eb9482b2374eb16 200
+[debug] [2023-09-01T19:28:36.063Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e7a9873fdc76a128dc7ba6e34d3cde38cf7872ca3e2117f17eb9482b2374eb16 [stream]
+[debug] [2023-09-01T19:28:36.125Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/43127f4210c52bcd0f30f291f1ee296ab41ddd1566905dc27fe1129e0175c8f1 200
+[debug] [2023-09-01T19:28:36.125Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/43127f4210c52bcd0f30f291f1ee296ab41ddd1566905dc27fe1129e0175c8f1 [stream]
+[debug] [2023-09-01T19:28:36.127Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ef3c9064c9fa776aa5f4e0817507449d9ac49ab1aa10809cb7c991da2d27a1bc 200
+[debug] [2023-09-01T19:28:36.127Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/ef3c9064c9fa776aa5f4e0817507449d9ac49ab1aa10809cb7c991da2d27a1bc [stream]
+[debug] [2023-09-01T19:28:36.146Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/a389441d6e4c1a6acfd0fffcf81d5e477e0b9769b62ae6f7039c6544831aa2c9 200
+[debug] [2023-09-01T19:28:36.146Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/a389441d6e4c1a6acfd0fffcf81d5e477e0b9769b62ae6f7039c6544831aa2c9 [stream]
+[debug] [2023-09-01T19:28:36.323Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/492f77d8286903200f8307327357ff21ea4b77e05511766c615e529d71fe059b 200
+[debug] [2023-09-01T19:28:36.323Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/492f77d8286903200f8307327357ff21ea4b77e05511766c615e529d71fe059b [stream]
+[debug] [2023-09-01T19:28:36.358Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/d751eb2494549546567529aafc2bc33645ca9616f9ce29c9d47047922f7de254 200
+[debug] [2023-09-01T19:28:36.358Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/d751eb2494549546567529aafc2bc33645ca9616f9ce29c9d47047922f7de254 [stream]
+[debug] [2023-09-01T19:28:36.359Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/d85f94679a413861755e184281bfe43366172ea82d7ab3733eaa8c7f2ad61def 200
+[debug] [2023-09-01T19:28:36.359Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/d85f94679a413861755e184281bfe43366172ea82d7ab3733eaa8c7f2ad61def [stream]
+[debug] [2023-09-01T19:28:36.495Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/6261fa95263e6ae057fd9eb6b88a3b4f5264436676a7956c5b1c639be63684f6 200
+[debug] [2023-09-01T19:28:36.495Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/6261fa95263e6ae057fd9eb6b88a3b4f5264436676a7956c5b1c639be63684f6 [stream]
+[debug] [2023-09-01T19:28:36.496Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e99783fc38e3e52fb8fee28520f6aec9a822567c6bfe0c50b41161a660091a0e 200
+[debug] [2023-09-01T19:28:36.496Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/e99783fc38e3e52fb8fee28520f6aec9a822567c6bfe0c50b41161a660091a0e [stream]
+[debug] [2023-09-01T19:28:36.646Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/70e13ac3878e51416d0e1ec0640758b1893ca705464341f799295981c1127b41 200
+[debug] [2023-09-01T19:28:36.646Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/webdev-stas/versions/eb7fd525f86a164f/files/70e13ac3878e51416d0e1ec0640758b1893ca705464341f799295981c1127b41 [stream]
+[debug] [2023-09-01T19:28:36.646Z] [hosting][upload queue][FINAL] {"max":2236,"min":1333,"avg":1539.5555555555554,"active":0,"complete":63,"success":63,"errored":0,"retried":0,"total":63,"elapsed":2240}
+[info] +  hosting[webdev-stas]: file upload complete 
+[debug] [2023-09-01T19:28:36.647Z] [hosting] deploy completed after 3439ms
+[info] i  functions: creating Node.js 16 (2nd Gen) function firebase-frameworks-webdev-stas:ssrwebdevstas(us-central1)... 
+[debug] [2023-09-01T19:28:36.651Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/functions functionId=ssrwebdevstas
+[debug] [2023-09-01T19:28:36.651Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/functions {"name":"projects/webdev-stas/locations/us-central1/functions/ssrwebdevstas","buildConfig":{"runtime":"nodejs16","entryPoint":"ssrwebdevstas","source":{"storageSource":{"bucket":"gcf-v2-uploads-331790068292-us-central1","object":"2e8fc6ca-1cc2-47b8-957b-cfcce2cdb678.zip"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"environmentVariables":{"__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","FIREBASE_CONFIG":"{\"projectId\":\"webdev-stas\",\"storageBucket\":\"webdev-stas.appspot.com\"}","GCLOUD_PROJECT":"webdev-stas","EVENTARC_CLOUD_EVENT_SOURCE":"projects/webdev-stas/locations/us-central1/services/ssrwebdevstas"},"ingressSettings":null,"timeoutSeconds":null,"serviceAccountEmail":null,"availableMemory":"256Mi","minInstanceCount":null,"maxInstanceCount":null,"maxInstanceRequestConcurrency":80,"availableCpu":"1","vpcConnector":null,"vpcConnectorEgressSettings":null},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-webdev-stas","firebase-functions-hash":"1c58d86da624fdb1c7adee4c4b64b1d65f862d7b"}}
+[debug] [2023-09-01T19:28:39.227Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/functions 200
+[debug] [2023-09-01T19:28:39.227Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/functions {"name":"projects/webdev-stas/locations/us-central1/operations/operation-1693596516582-604512ac38580-3d0cde30-78619f02","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2023-09-01T19:28:38.195871750Z","target":"projects/webdev-stas/locations/us-central1/functions/ssrwebdevstas","verb":"create","cancelRequested":false,"apiVersion":"v2"},"done":false}
+[debug] [2023-09-01T19:28:39.227Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/operations/operation-1693596516582-604512ac38580-3d0cde30-78619f02 [none]
+[debug] [2023-09-01T19:28:40.150Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/operations/operation-1693596516582-604512ac38580-3d0cde30-78619f02 200
+[debug] [2023-09-01T19:28:40.150Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/operations/operation-1693596516582-604512ac38580-3d0cde30-78619f02 {"name":"projects/webdev-stas/locations/us-central1/operations/operation-1693596516582-604512ac38580-3d0cde30-78619f02","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2023-09-01T19:28:38.195871750Z","target":"projects/webdev-stas/locations/us-central1/functions/ssrwebdevstas","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/webdev-stas/locations/us-central1/functions/ssrwebdevstas","buildConfig":{"runtime":"nodejs16","entryPoint":"ssrwebdevstas","source":{"storageSource":{"bucket":"gcf-v2-sources-331790068292-us-central1","object":"ssrwebdevstas/function-source.zip","generation":"1693596517722737"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"service":"projects/webdev-stas/locations/us-central1/services/ssrwebdevstas","timeoutSeconds":60,"environmentVariables":{"__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","FIREBASE_CONFIG":"{\"projectId\":\"webdev-stas\",\"storageBucket\":\"webdev-stas.appspot.com\"}","GCLOUD_PROJECT":"webdev-stas","EVENTARC_CLOUD_EVENT_SOURCE":"projects/webdev-stas/locations/us-central1/services/ssrwebdevstas"},"maxInstanceCount":100,"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"331790068292-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-webdev-stas","firebase-functions-hash":"1c58d86da624fdb1c7adee4c4b64b1d65f862d7b"},"environment":"GEN_2"},"stages":[{"name":"BUILD","state":"NOT_STARTED"},{"name":"SERVICE","state":"NOT_STARTED"}]},"done":false}
+[debug] [2023-09-01T19:28:40.657Z] [create-firebase-frameworks-webdev-stas-us-central1-ssrwebdevstas] Retrying task index 0
+[debug] [2023-09-01T19:28:40.658Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/operations/operation-1693596516582-604512ac38580-3d0cde30-78619f02 [none]
+[debug] [2023-09-01T19:28:41.579Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/operations/operation-1693596516582-604512ac38580-3d0cde30-78619f02 200
+[debug] [2023-09-01T19:28:41.579Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/webdev-stas/locations/us-central1/operations/operation-1693596516582-604512ac38580-3d0cde30-78619f02 {"name":"projects/webdev-stas/locations/us-central1/operations/operation-1693596516582-604512ac38580-3d0cde30-78619f02","metadata":{"@type":"type.googleapis.com/google.cloud.functions.v2.OperationMetadata","createTime":"2023-09-01T19:28:38.195871750Z","endTime":"2023-09-01T19:28:40.369492623Z","target":"projects/webdev-stas/locations/us-central1/functions/ssrwebdevstas","verb":"create","cancelRequested":false,"apiVersion":"v2","requestResource":{"@type":"type.googleapis.com/google.cloud.functions.v2.Function","name":"projects/webdev-stas/locations/us-central1/functions/ssrwebdevstas","buildConfig":{"runtime":"nodejs16","entryPoint":"ssrwebdevstas","source":{"storageSource":{"bucket":"gcf-v2-sources-331790068292-us-central1","object":"ssrwebdevstas/function-source.zip","generation":"1693596517722737"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}},"serviceConfig":{"service":"projects/webdev-stas/locations/us-central1/services/ssrwebdevstas","timeoutSeconds":60,"environmentVariables":{"__FIREBASE_FRAMEWORKS_ENTRY__":"next.js","FIREBASE_CONFIG":"{\"projectId\":\"webdev-stas\",\"storageBucket\":\"webdev-stas.appspot.com\"}","GCLOUD_PROJECT":"webdev-stas","EVENTARC_CLOUD_EVENT_SOURCE":"projects/webdev-stas/locations/us-central1/services/ssrwebdevstas"},"maxInstanceCount":100,"ingressSettings":"ALLOW_ALL","serviceAccountEmail":"331790068292-compute@developer.gserviceaccount.com","availableMemory":"256Mi","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"labels":{"deployment-tool":"cli-firebase","firebase-functions-codebase":"firebase-frameworks-webdev-stas","firebase-functions-hash":"1c58d86da624fdb1c7adee4c4b64b1d65f862d7b"},"environment":"GEN_2"},"stages":[{"name":"ARTIFACT_REGISTRY","message":"Deleting function artifacts in Artifact Registry","state":"COMPLETE"},{"name":"SERVICE","message":"Deleting Cloud Run service","state":"COMPLETE","resource":"projects/webdev-stas/locations/us-central1/services/ssrwebdevstas"}]},"done":true,"error":{"code":7,"message":"Unable to retrieve the repository metadata for projects/webdev-stas/locations/us-central1/repositories/gcf-artifacts. Ensure that the Cloud Functions service account has 'artifactregistry.repositories.list' and 'artifactregistry.repositories.get' permissions. You can add the permissions by granting the role 'roles/artifactregistry.reader'."}}
+[error] Unable to retrieve the repository metadata for projects/webdev-stas/locations/us-central1/repositories/gcf-artifacts. Ensure that the Cloud Functions service account has 'artifactregistry.repositories.list' and 'artifactregistry.repositories.get' permissions. You can add the permissions by granting the role 'roles/artifactregistry.reader'.
+[debug] [2023-09-01T19:28:41.583Z] Total Function Deployment time: 4932
+[debug] [2023-09-01T19:28:41.583Z] 1 Functions Deployed
+[debug] [2023-09-01T19:28:41.584Z] 1 Functions Errored
+[debug] [2023-09-01T19:28:41.584Z] 0 Function Deployments Aborted
+[debug] [2023-09-01T19:28:41.584Z] Average Function Deployment time: 4931
+[info] 
+[info] Functions deploy had errors with the following functions:
+	firebase-frameworks-webdev-stas:ssrwebdevstas(us-central1)
+[debug] [2023-09-01T19:28:41.708Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[info] i  functions: cleaning up build files... 
+[debug] [2023-09-01T19:28:41.710Z] >>> [apiv2][query] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/webdev-stas/locations/us-central1/repositories/gcf-artifacts/packages/ssrwebdevstas [none]
+[debug] [2023-09-01T19:28:41.710Z] >>> [apiv2][query] GET https://us.gcr.io/v2/webdev-stas/gcf/us-central1/tags/list [none]
+[debug] [2023-09-01T19:28:42.686Z] <<< [apiv2][status] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/webdev-stas/locations/us-central1/repositories/gcf-artifacts/packages/ssrwebdevstas 404
+[debug] [2023-09-01T19:28:42.686Z] <<< [apiv2][body] DELETE https://artifactregistry.googleapis.com/v1beta2/projects/webdev-stas/locations/us-central1/repositories/gcf-artifacts/packages/ssrwebdevstas {"error":{"code":404,"message":"Package \"projects/webdev-stas/locations/us-central1/repositories/gcf-artifacts/packages/ssrwebdevstas\" was not found.","status":"NOT_FOUND"}}
+[debug] [2023-09-01T19:28:44.002Z] <<< [apiv2][status] GET https://us.gcr.io/v2/webdev-stas/gcf/us-central1/tags/list 200
+[debug] [2023-09-01T19:28:44.002Z] <<< [apiv2][body] GET https://us.gcr.io/v2/webdev-stas/gcf/us-central1/tags/list {"child":[],"manifest":{},"name":"webdev-stas/gcf/us-central1","tags":[]}
+[debug] [2023-09-01T19:28:44.002Z] Could not find image for function projects/webdev-stas/locations/us-central1/functions/ssrwebdevstas
+[debug] [2023-09-01T19:28:44.002Z] Functions deploy failed.
+[debug] [2023-09-01T19:28:44.003Z] {
+  "endpoint": {
+    "id": "ssrwebdevstas",
+    "project": "webdev-stas",
+    "region": "us-central1",
+    "entryPoint": "ssrwebdevstas",
+    "platform": "gcfv2",
+    "runtime": "nodejs16",
+    "httpsTrigger": {},
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    },
+    "serviceAccount": null,
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "concurrency": 80,
+    "vpc": null,
+    "environmentVariables": {
+      "__FIREBASE_FRAMEWORKS_ENTRY__": "next.js",
+      "FIREBASE_CONFIG": "{\"projectId\":\"webdev-stas\",\"storageBucket\":\"webdev-stas.appspot.com\"}",
+      "GCLOUD_PROJECT": "webdev-stas",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/webdev-stas/locations/us-central1/services/ssrwebdevstas"
+    },
+    "codebase": "firebase-frameworks-webdev-stas",
+    "cpu": 1,
+    "targetedByOnly": false,
+    "hash": "1c58d86da624fdb1c7adee4c4b64b1d65f862d7b"
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "exit": 1,
+    "message": "Unable to retrieve the repository metadata for projects/webdev-stas/locations/us-central1/repositories/gcf-artifacts. Ensure that the Cloud Functions service account has 'artifactregistry.repositories.list' and 'artifactregistry.repositories.get' permissions. You can add the permissions by granting the role 'roles/artifactregistry.reader'.",
+    "status": 7,
+    "code": 7
+  }
+}
+[debug] [2023-09-01T19:28:44.128Z] Error: Failed to create function ssrwebdevstas in region us-central1
+    at C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:288:27
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Fabricator.createV2Function (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:276:30)
+    at async Fabricator.createEndpoint (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:135:13)
+    at async handle (C:\Users\stas\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:88:17)
+[error] 
+[error] Error: There was an error deploying functions

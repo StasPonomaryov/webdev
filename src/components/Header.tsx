@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import authorPic from '../public/img/stas.jpg';
+import authorPic from '../../public/img/stas.jpg';
 
 const Header: FC<{locale: string}> = ({ locale }) => {
   const t = useTranslations('Index');

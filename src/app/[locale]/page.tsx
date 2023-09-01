@@ -1,25 +1,26 @@
 'use client';
 
+import { ReactNode } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import sectionAbout from '../../public/img/growth.jpg';
-import sectionProjects from '../../public/img/winnie-2.png';
-import html from '../../public/img/logos/html.png';
-import css from '../../public/img/logos/css.png';
-import js from '../../public/img/logos/js.png';
-import ts from '../../public/img/logos/ts.png';
-import php from '../../public/img/logos/php.png';
-import wordpress from '../../public/img/logos/wordpress.png';
-import woocommerce from '../../public/img/logos/woo.png';
-import opencart from '../../public/img/logos/opencart.png';
-import nodejs from '../../public/img/logos/node.png';
-import nextjs from '../../public/img/logos/nextjs.png';
-import develop from '../../public/img/develop.jpg';
-import upgrade from '../../public/img/upgrade.jpg';
-import optimize from '../../public/img/optimize.jpg';
-import Button from '@/components/Button';
+import sectionAbout from '../../../public/img/growth.jpg';
+import sectionProjects from '../../../public/img/winnie-2.png';
+import html from '../../../public/img/logos/html.png';
+import css from '../../../public/img/logos/css.png';
+import js from '../../../public/img/logos/js.png';
+import ts from '../../../public/img/logos/ts.png';
+import php from '../../../public/img/logos/php.png';
+import wordpress from '../../../public/img/logos/wordpress.png';
+import woocommerce from '../../../public/img/logos/woo.png';
+import opencart from '../../../public/img/logos/opencart.png';
+import nodejs from '../../../public/img/logos/node.png';
+import nextjs from '../../../public/img/logos/nextjs.png';
+import develop from '../../../public/img/develop.jpg';
+import upgrade from '../../../public/img/upgrade.jpg';
+import optimize from '../../../public/img/optimize.jpg';
+import Button from '../../components/Button';
 
 export default function Index() {
   const t = useTranslations('Index');
@@ -101,7 +102,7 @@ export default function Index() {
               </div>
               <h3>{t('Development')}</h3>
               {t.rich('developmentDetails', {
-                p: (chunks) => <p>{chunks}</p>
+                p: (chunks: ReactNode) => <p>{chunks}</p>
               })}
               <Button
                 className="button-secondary flex self-start mt-auto"
@@ -116,7 +117,7 @@ export default function Index() {
               </div>
               <h3>{t('Update / Repair / Upgrade')}</h3>
               {t.rich('updateDetails', {
-                p: (chunks) => <p>{chunks}</p>
+                p: (chunks:ReactNode) => <p>{chunks}</p>
               })}
               <Button
                 className="button-secondary flex self-start mt-auto"
@@ -131,7 +132,7 @@ export default function Index() {
               </div>
               <h3>{t('SEO, UI optimization')}</h3>
               {t.rich('optimizationDetails', {
-                p: (chunks) => <p>{chunks}</p>
+                p: (chunks:ReactNode) => <p>{chunks}</p>
               })}
               <Button
                 className="button-secondary flex self-start mt-auto"
@@ -153,7 +154,7 @@ export default function Index() {
             <div className="p-0 md:w-3/4">
               <p>{t('projectsFirstParagraph')}</p>
               <p>{t.rich('projectsSecondParagraph', {
-                link: (chunks) => <a href="#contacts">{chunks}</a>
+                link: (chunks:ReactNode) => <a href="#contacts">{chunks}</a>
               })}</p>
             </div>
           </div>
@@ -167,12 +168,12 @@ export default function Index() {
               <p>{t('contactsFirstParagraph')}</p>
               <p>{t('contactsSecondParagraph')}</p>
               <div itemScope={true} itemType="http://schema.org/Person">
-                <span itemProp="name">{t('title')}</span>,&nbsp; 
+                <span itemProp="name">{t('title')}</span>,&nbsp;
                 <span itemProp="jobTitle">{t('webDeveloper')}</span><br />
                 {t('phone')}: <span itemProp="telephone">+38(097)74-34-030</span><br />
-                {t('email')}:&nbsp; 
+                {t('email')}:&nbsp;
                 <a href="mailto:ponomaryov.stas@gmail.com" itemProp="email">ponomaryov.stas@gmail.com</a><br />
-                {t('homePage')}:&nbsp; 
+                {t('homePage')}:&nbsp;
                 <a href="https://www.alex.kr.ua/dev" itemProp="url">alex.kr.ua</a><br />
               </div>
             </div>

@@ -150,7 +150,7 @@ section h3 {
 
 #about,
 #projects {
-  @apply bg-gray-100 dark:bg-slate-800 py-8;
+  @apply bg-gray-100 dark:bg-slate-800 py-8 px-4;
 }
 
 #about .section-row img {
@@ -159,7 +159,7 @@ section h3 {
 
 #work,
 #contacts {
-  @apply bg-white dark:bg-slate-900 py-8;
+  @apply bg-white dark:bg-slate-900 py-8 px-4;
 }
 
 #projects a,
@@ -170,7 +170,7 @@ section h3 {
 }
 
 .page-footer .row {
-  @apply flex flex-col lg:flex-row items-center px-12 w-full bg-white dark:bg-slate-900;
+  @apply flex flex-col lg:flex-row items-center px-12 py-8 w-full bg-white dark:bg-slate-900;
   border-bottom-left-radius: 10vh;
   border-bottom-right-radius: 10vh;
 }
