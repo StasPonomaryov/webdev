@@ -17,3 +17,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WEBDEV_STAS }}'
           channelId: live
           projectId: webdev-stas
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks

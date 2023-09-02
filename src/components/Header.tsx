@@ -19,7 +19,12 @@ const Header: FC<{locale: string}> = ({ locale }) => {
           <h2>{t('shortDescription')}</h2>
         </div>
         <div className="languages">
-          <Image src={authorPic} alt={t('title')} className="profile-pic" />
+          <Image
+            src={authorPic}
+            alt={t('title')}
+            unoptimized
+            className="profile-pic"
+          />
           <Link href="/uk" className={locale === 'uk' ? 'active' : ''}>українська</Link>
           &nbsp;•&nbsp;
           <Link href="/en" className={locale === 'en' ? 'active' : ''}>english</Link>
