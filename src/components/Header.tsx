@@ -23,6 +23,7 @@ const Header: FC<{locale: string}> = ({ locale }) => {
             src={authorPic}
             alt={t('title')}
             unoptimized
+            loading="eager"
             className="profile-pic"
           />
           <Link href="/uk" className={locale === 'uk' ? 'active' : ''}>українська</Link>

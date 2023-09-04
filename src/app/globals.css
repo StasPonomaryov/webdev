@@ -182,3 +182,51 @@ section h3 {
 .page-footer .menu li {
   @apply p-2
 }
+
+.input-label {
+  @apply block mb-3 text-sm font-semibold text-gray-500
+}
+
+.input-field {
+  @apply w-full bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+}
+
+.radio-group {
+  @apply text-sm font-medium text-gray-900 bg-white rounded-lg dark:bg-slate-900 dark:text-white
+}
+
+.radio-group-title {
+  @apply mb-2 text-sm font-medium text-gray-900 dark:text-white
+}
+
+.radio-group.radio-group-horizontal {
+  @apply items-center w-full sm:flex
+}
+
+.radio-group.radio-group-vertical {
+  @apply w-48
+}
+
+.radio-group .radio-group-item {
+  @apply w-full 
+}
+
+.radio-group-item-inner {
+  @apply flex items-center pl-3
+}
+
+.radio-group-input {
+  @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500
+}
+
+.radio-group-label {
+  @apply w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300
+}
+
+.textarea-label {
+  @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white
+}
+
+.textarea-field {
+  @apply block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+}

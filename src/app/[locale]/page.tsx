@@ -21,6 +21,7 @@ import develop from '../../../public/img/develop.jpg';
 import upgrade from '../../../public/img/upgrade.jpg';
 import optimize from '../../../public/img/optimize.jpg';
 import Button from '../../components/Button';
+import { Form } from 'components/Form';
 
 export default function Index() {
   const t = useTranslations('Index');
@@ -164,7 +165,7 @@ export default function Index() {
         <div className="container mx-auto">
           <h2>{t('contacts')}</h2>
           <div className="section-row">
-            <div className="md:w-2/4">
+            <div className="md:w-2/4 pr-4">
               <p>{t('contactsFirstParagraph')}</p>
               <p>{t('contactsSecondParagraph')}</p>
               <div itemScope={true} itemType="http://schema.org/Person">
@@ -177,7 +178,10 @@ export default function Index() {
                 <a href="https://www.alex.kr.ua/dev" itemProp="url">alex.kr.ua</a><br />
               </div>
             </div>
-            <div className="md:w-2/4">2</div>
+            <div className="md:w-2/4 pl-4">
+              <p>{t('introduceYourself')}</p>
+              <Form />
+            </div>
           </div>
         </div>
       </section>

@@ -30,11 +30,19 @@
     "webDeveloper": "web developer",
     "phone": "Phone",
     "email": "Email",
-    "homePage": "Home page"
+    "homePage": "Home page",
+    "introduceYourself": "Please introduce yourself and enter your e-mail, this will guarantee an answer to your message.",
+    "create": "Development",
+    "hire": "Updating",
+    "ask": "Optimization"
   },
   "Error": {
     "title": "Something went wrong!",
-    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "nameRequired": "Name is a required field",
+    "emailRequired": "Email is a required field",
+    "subjectRequired": "You must choose a subject",
+    "emailInvalid": "Invalid email"
   },
   "NotFoundPage": {
     "title": "Page not found",
