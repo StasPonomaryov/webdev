@@ -4,10 +4,15 @@ import * as yup from 'yup';
 import { useTranslations } from 'next-intl';
 import RadioButtonGroup from './RadioGroup';
 import TextArea from './TextArea';
+import InputText from './InputText';
+import InputEmail from './InputEmail';
 
+interface Props {
+  selected: string;
+}
 
-
-export const Form: FC = () => {
+export const Form: FC<Props> = (props) => {
+  const { selected } = props;
   const t = useTranslations();
 
   const schema = yup.object().shape({
@@ -26,9 +31,10 @@ export const Form: FC = () => {
     initialValues: {
       name: '',
       email: '',
-      task: '',
+      task: selected || '',
       message: ''
     },
+    enableReinitialize: true,
     validationSchema: schema,
     onSubmit: async ({ name, email, task, message }) => {
       console.log({ name, email, task, message });
@@ -37,28 +43,27 @@ export const Form: FC = () => {
 
   const { errors, touched, values, handleChange, handleSubmit, setFieldValue } = formik;
 
+
   return (
     <form className="mt-2 space-y-4" onSubmit={handleSubmit}>
-      <label htmlFor="name" className="input-label">Як вас звати?</label>
-      <input
-        className="input-field lg:w-2/4"
-        type="text"
+      <InputText
         name="name"
+        label={t('Index.whatIsYourName')}
         value={values.name}
         onChange={handleChange}
-        id="name"
+        errors={errors.name}
+        touched={touched.name}
+        required={true}
       />
-      {errors.name && touched.name && <span>{errors.name}</span>}
-      <label htmlFor="email" className="input-label">Email</label>
-      <input
-        className="input-field lg:w-2/4"
-        type="email"
+      <InputEmail
         name="email"
+        label="Email"
         value={values.email}
         onChange={handleChange}
-        id="email"
+        errors={errors.email}
+        touched={touched.email}
+        required={true}
       />
-      {errors.email && touched.email && <span>{errors.email}</span>}
       <RadioButtonGroup
         type="horizontal"
         required={true}
@@ -69,7 +74,7 @@ export const Form: FC = () => {
         onChange={setFieldValue}
       />
       <TextArea
-        label="Ви можете написати мені тут"
+        label={t('Index.youCanWriteHere')}
         name="message"
         value={values.message}
         required={false}
@@ -77,7 +82,10 @@ export const Form: FC = () => {
         touched={touched.message}
         onChange={handleChange}
       />
-      <button type="submit">Відправити</button>
+      <button
+        className="button-main"
+        type="submit"
+      >{t('Index.send')}</button>
     </form>
   );
 }

@@ -43,7 +43,7 @@ const RadioGroup: FC<Props> = (props) => {
                   value={i.value}
                   name="task"
                   className="radio-group-input"
-                  onChange={(e) => { console.log(e); onChange('task', e.target.value); }}
+                  onChange={(e) => onChange('task', e.target.value)}
                   checked={value === i.value}
                 />
                 <label htmlFor="radioGroup" className="radio-group-label">
@@ -54,7 +54,7 @@ const RadioGroup: FC<Props> = (props) => {
           );
         })}
       </ul>
-      {errors && touched && <span>{errors}</span>}
+      {errors && touched && <span className="error-notify">{errors}</span>}
     </>
   );
 };

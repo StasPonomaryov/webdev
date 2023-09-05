@@ -34,7 +34,10 @@
     "introduceYourself": "Please introduce yourself and enter your e-mail, this will guarantee an answer to your message.",
     "create": "Development",
     "hire": "Updating",
-    "ask": "Optimization"
+    "ask": "Optimization",
+    "whatIsYourName": "What is your name?",
+    "youCanWriteHere": "You can write me here",
+    "send": "Send"
   },
   "Error": {
     "title": "Something went wrong!",
