@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { useTranslations } from 'next-intl';
+import { sendEmail } from 'sendEmail';
 import RadioButtonGroup from './RadioGroup';
 import TextArea from './TextArea';
 import InputText from './InputText';
@@ -36,16 +37,16 @@ export const Form: FC<Props> = (props) => {
     },
     enableReinitialize: true,
     validationSchema: schema,
-    onSubmit: async ({ name, email, task, message }) => {
-      console.log({ name, email, task, message });
+    onSubmit: async (formData) => {
+      console.log(formData);
+      await sendEmail(formData);
     },
   });  
 
   const { errors, touched, values, handleChange, handleSubmit, setFieldValue } = formik;
 
-
   return (
-    <form className="mt-2 space-y-4" onSubmit={handleSubmit}>
+    <form className="mt-2 space-y-4" onSubmit={handleSubmit} noValidate>
       <InputText
         name="name"
         label={t('Index.whatIsYourName')}

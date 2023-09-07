@@ -21,9 +21,9 @@ async function getMessages(locale: string) {
   }
 }
 
-export async function generateStaticParams() {
-  return ['uk', 'en'].map((locale) => ({ locale }));
-}
+// export async function generateStaticParams() {
+//   return ['uk', 'en'].map((locale) => ({ locale }));
+// }
 
 export async function generateMetadata({ params: { locale } }: RootLayoutProps) {
   const messages = await getMessages(locale);
