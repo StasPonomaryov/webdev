@@ -13,19 +13,24 @@ interface EmailFormData {
 
 export const sendEmail = async (formData: EmailFormData) => {
   const { name, email, task, message } = formData;
-  let taskReal;
+  let taskReal: string;
   switch (task) {
     case 'create': taskReal = 'Development'; break;
     case 'hire': taskReal = 'Update'; break;
-    case 'ask': 
+    case 'ask':
     default: taskReal = 'Optimize'; break;
   }
-
-  await resend.emails.send({
-    from: 'Contact form <onboarding@resend.dev>',
-    to: 'ponomaryov.stas@gmail.com',
-    reply_to: email,
-    subject: 'New message from personal site',
-    text: `New message from personal site:\n\n${message}\n\nChoice: ${taskReal}\n\nEmail: ${email}\n\nName: ${name}`
-  });
+  try {
+    await resend.emails.send({
+      from: 'Contact form <onboarding@resend.dev>',
+      to: 'ponomaryov.stas@gmail.com',
+      reply_to: email,
+      subject: 'New message from personal site',
+      text: `New message from personal site:\n\n${message}\n\nChoice: ${taskReal}\n\nEmail: ${email}\n\nName: ${name}`
+    });
+  } catch (error) {
+    return {
+      error: error.message
+    };
+  }
 };

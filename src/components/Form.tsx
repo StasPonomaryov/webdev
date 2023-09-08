@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { useTranslations } from 'next-intl';
@@ -15,6 +15,8 @@ interface Props {
 export const Form: FC<Props> = (props) => {
   const { selected } = props;
   const t = useTranslations();
+  const [errorAction, setErrorAction] = useState('');
+  const [successAction, setSuccessAction] = useState('');
 
   const schema = yup.object().shape({
     name: yup.string().required(t('Error.nameRequired')),
@@ -38,15 +40,24 @@ export const Form: FC<Props> = (props) => {
     enableReinitialize: true,
     validationSchema: schema,
     onSubmit: async (formData) => {
-      console.log(formData);
-      await sendEmail(formData);
+      const result = await sendEmail(formData);
+      if (result?.error) {
+        setErrorAction(result.error);
+      } else {
+        setSuccessAction(t('Index.sent'));
+      }
     },
   });  
 
   const { errors, touched, values, handleChange, handleSubmit, setFieldValue } = formik;
 
   return (
-    <form className="mt-2 space-y-4" onSubmit={handleSubmit} noValidate>
+    <form
+      className="mt-2 space-y-4"
+      onSubmit={handleSubmit}
+      // action={sendEmail}
+      noValidate
+    >
       <InputText
         name="name"
         label={t('Index.whatIsYourName')}
@@ -85,8 +96,11 @@ export const Form: FC<Props> = (props) => {
       />
       <button
         className="button-main"
+        data-check={process.env.RESEND_API_KEY}
         type="submit"
       >{t('Index.send')}</button>
+      {errorAction && <p className="error-notify">{errorAction}</p>}
+      {successAction && <p className="success">{successAction}</p>}
     </form>
   );
 }

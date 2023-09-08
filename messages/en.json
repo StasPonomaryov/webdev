@@ -37,7 +37,8 @@
     "ask": "Optimization",
     "whatIsYourName": "What is your name?",
     "youCanWriteHere": "You can write me here",
-    "send": "Send"
+    "send": "Send",
+    "sent": "Thanks, the message was sent!"
   },
   "Error": {
     "title": "Something went wrong!",

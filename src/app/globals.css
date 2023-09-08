@@ -236,6 +236,11 @@ section h3 {
   color: #c00;
 }
 
-.error-notify {
+.success {
+  color: #0a0;
+}
+
+.error-notify,
+.success-notify {
   @apply text-sm
 }
