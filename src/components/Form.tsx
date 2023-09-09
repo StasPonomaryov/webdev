@@ -2,7 +2,6 @@ import { FC, useState } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import { useTranslations } from 'next-intl';
-import { sendEmail } from 'sendEmail';
 import RadioButtonGroup from './RadioGroup';
 import TextArea from './TextArea';
 import InputText from './InputText';
@@ -40,12 +39,19 @@ export const Form: FC<Props> = (props) => {
     enableReinitialize: true,
     validationSchema: schema,
     onSubmit: async (formData) => {
-      const result = await sendEmail(formData);
-      if (result?.error) {
-        setErrorAction(result.error);
-      } else {
-        setSuccessAction(t('Index.sent'));
-      }
+      const endPoint = '/api/send';
+
+      fetch(endPoint, {
+        method: 'POST',
+        body: JSON.stringify(formData),
+      })
+        .then((res) => res.json())
+        .then((response) => {
+          setSuccessAction(t('Index.sent'))
+        })
+        .catch((error) => {
+          setErrorAction(error)
+        })
     },
   });  
 
@@ -55,7 +61,6 @@ export const Form: FC<Props> = (props) => {
     <form
       className="mt-2 space-y-4"
       onSubmit={handleSubmit}
-      // action={sendEmail}
       noValidate
     >
       <InputText
@@ -96,7 +101,6 @@ export const Form: FC<Props> = (props) => {
       />
       <button
         className="button-main"
-        data-check={process.env.RESEND_API_KEY}
         type="submit"
       >{t('Index.send')}</button>
       {errorAction && <p className="error-notify">{errorAction}</p>}

@@ -149,7 +149,8 @@ section h3 {
 }
 
 #about,
-#projects {
+#projects,
+#error {
   @apply bg-gray-100 dark:bg-slate-800 py-8 px-4;
 }
 
