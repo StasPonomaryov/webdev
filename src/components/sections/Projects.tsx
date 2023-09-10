@@ -9,13 +9,13 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-        <div className="container mx-auto">
+        <div className="container">
           <h2>{t('projects')}</h2>
           <div className="section-row">
-            <div className="md:w-1/4">
+            <div className="projects-image">
               <Image src={sectionProjects} alt={t('projects')} unoptimized className="h-auto max-w-full p-4" />
             </div>
-            <div className="p-0 md:w-3/4">
+            <div className="projects-info">
               <p>{t('projectsFirstParagraph')}</p>
               <p>{t.rich('projectsSecondParagraph', {
                 link: (chunks: ReactNode) => <a href="#contacts">{chunks}</a>

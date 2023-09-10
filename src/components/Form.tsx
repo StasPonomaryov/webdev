@@ -38,7 +38,7 @@ export const Form: FC<Props> = (props) => {
     },
     enableReinitialize: true,
     validationSchema: schema,
-    onSubmit: async (formData) => {
+    onSubmit: async (formData, { resetForm }) => {
       const endPoint = '/api/send';
 
       fetch(endPoint, {
@@ -47,19 +47,19 @@ export const Form: FC<Props> = (props) => {
       })
         .then((res) => res.json())
         .then((response) => {
-          setSuccessAction(t('Index.sent'))
+          resetForm();
+          setTimeout(() => setSuccessAction(t('Index.sent')), 3000);
         })
         .catch((error) => {
           setErrorAction(error)
         })
     },
-  });  
+  });
 
   const { errors, touched, values, handleChange, handleSubmit, setFieldValue } = formik;
 
   return (
     <form
-      className="mt-2 space-y-4"
       onSubmit={handleSubmit}
       noValidate
     >

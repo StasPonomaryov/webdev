@@ -11,11 +11,11 @@ const Footer: FC<{locale: string}> = ({ locale }) => {
   return (
     <footer className="page-footer">
       <div className="row">
-        <div className="copyright md:w-1/3">
+        <div className="copyright">
           &copy; {t('title')}, 2023
         </div>
-        <div className="menu md:w-1/3">
-          <nav role="menu">
+        <div className="menu">
+          <nav>
             <ul>
               <li>
                 <Link href="#about">{t('about')}</Link>
@@ -32,7 +32,7 @@ const Footer: FC<{locale: string}> = ({ locale }) => {
             </ul>
           </nav>
         </div>
-        <div className="contact-info md:w-1/3 text-right">
+        <div className="contact-info">
           +38(097)74-34-030, ponomaryov.stas@gmail.com 
         </div>
       </div>

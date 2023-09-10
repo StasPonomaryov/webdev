@@ -7,10 +7,10 @@ const ContactsSection = (props: { selectedSubject: string }) => {
   
   return (
     <section id="contacts">
-      <div className="container mx-auto">
+      <div className="container">
         <h2>{t('contacts')}</h2>
         <div className="section-row">
-          <div className="md:w-2/4 pr-4">
+          <div className="contacts-info">
             <p>{t('contactsFirstParagraph')}</p>
             <p>{t('contactsSecondParagraph')}</p>
             <div itemScope={true} itemType="http://schema.org/Person">
@@ -23,7 +23,7 @@ const ContactsSection = (props: { selectedSubject: string }) => {
               <a href="https://www.alex.kr.ua/dev" itemProp="url">alex.kr.ua</a><br />
             </div>
           </div>
-          <div className="md:w-2/4 pl-4">
+          <div className="contacts-form">
             <p>{t('introduceYourself')}</p>
             <Form selected={selectedSubject} />
           </div>

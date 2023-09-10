@@ -25,7 +25,7 @@ const InputEmail: FC<Props> = (props) => {
       )}
       <input
         id={name}
-        className={`input-field lg:w-2/4 ${className}`}
+        className={`input-field lg:w-2/4 ${className || ''}`}
         type="email"
         name={name}
         value={value}

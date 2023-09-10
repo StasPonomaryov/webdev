@@ -20,10 +20,10 @@ const AboutSection = () => {
 
   return (
     <section id="about">
-      <div className="container mx-auto">
+      <div className="container bio">
+        <h2>{t('about')}</h2>
         <div className="section-row">
-          <div className="p-0 md:w-2/3">
-            <h2>{t('about')}</h2>
+          <div className="bio-details">
             <p>{t('hello_1')}</p>
             <p>{t('myNameIs')}</p>
             <p>{t('itStarted')}</p>
@@ -32,48 +32,48 @@ const AboutSection = () => {
             <p>{t('upgraded')}</p>
             <p>{t('now')}</p>
           </div>
-          <div className="md:w-1/3">
+          <div className="bio-picture">
             <Image src={sectionAbout} alt={t('about')} unoptimized className="h-auto max-w-full p-4" />
           </div>
         </div>
       </div>
-      <div className="container mx-auto">
-        <div className="section-row">
-          <div className="w-2/4 md:w-1/5">
+      <div className="container skills">
+        <div className="row">
+          <div className="logo-col">
             <Image src={html} alt="HTML 5" unoptimized loading="lazy" />
           </div>
-          <div className="w-2/4 md:w-1/5 lg:w-1/5">
+          <div className="logo-col">
             <Image src={css} alt="CSS 3" unoptimized loading="lazy" />
           </div>
-          <div className="w-2/4 md:w-1/5 lg:w-1/5">
+          <div className="logo-col">
             <Image src={js} alt="Javascript" unoptimized loading="lazy" />
           </div>
-          <div className="w-2/4 md:w-1/5 lg:w-1/5">
+          <div className="logo-col">
             <Image src={ts} alt="TypeScript" unoptimized loading="lazy" />
           </div>
-          <div className="w-2/4 md:w-1/5 lg:w-1/5">
+          <div className="logo-col">
             <Image src={php} alt="PHP" unoptimized loading="lazy" />
           </div>
         </div>
-        <div className="section-row">
-          <div className="w-2/4 md:w-1/5">
+        <div className="row">
+          <div className="logo-col">
             <Image src={wordpress} alt="Wordpress" unoptimized loading="lazy" />
           </div>
-          <div className="w-2/4 md:w-1/5 lg:w-1/5">
+          <div className="logo-col">
             <Image src={woocommerce} alt="Woocommerce" unoptimized loading="lazy" />
           </div>
-          <div className="w-2/4 md:w-1/5 lg:w-1/5">
+          <div className="logo-col">
             <Image src={opencart} alt="Opencart" unoptimized loading="lazy" />
           </div>
-          <div className="w-2/4 md:w-1/5 lg:w-1/5">
+          <div className="logo-col">
             <Image src={nodejs} alt="Node JS" unoptimized loading="lazy" />
           </div>
-          <div className="w-2/4 md:w-1/5 lg:w-1/5">
+          <div className="logo-col">
             <Image src={nextjs} alt="Next JS" unoptimized loading="lazy" />
           </div>
         </div>
       </div>
-      <div className="container mx-auto text-center">
+      <div className="container resume-button">
         <Link href={`/files/resume-${locale}.pdf`} target="_blank" className="button-main inline-block my-6">{t('resume')}</Link>
       </div>
     </section>
