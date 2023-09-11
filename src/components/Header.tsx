@@ -31,7 +31,7 @@ const Header: FC<{locale: string}> = ({ locale }) => {
           <Link href="/en" className={locale === 'en' ? 'active' : ''}>english</Link>
         </div>
         <div className="menu">
-          <nav>
+          <nav role="menu">
             <ul>
               <li>
                 <Link href="#about">{t('about')}</Link>

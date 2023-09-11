@@ -15,7 +15,7 @@ const WorkSection = (props: { selectService: (e: MouseEvent<HTMLButtonElement>) 
     <section id="work">
       <div className="container">
         <h2>{t('work')}</h2>
-        <div className="section-row">
+        <div className="work-row">
           <div className="service">
             <div className="mb-2">
               <Image src={develop} alt={t('Development')} unoptimized loading="lazy" />
@@ -25,7 +25,6 @@ const WorkSection = (props: { selectService: (e: MouseEvent<HTMLButtonElement>) 
               p: (chunks: ReactNode) => <p>{chunks}</p>
             })}
             <Button
-              className="button-secondary flex self-start mt-auto"
               type="button"
               name="btnOrder"
               onClick={selectService}
@@ -40,7 +39,6 @@ const WorkSection = (props: { selectService: (e: MouseEvent<HTMLButtonElement>) 
               p: (chunks: ReactNode) => <p>{chunks}</p>
             })}
             <Button
-              className="button-secondary flex self-start mt-auto"
               type="button"
               name="btnHire"
               onClick={selectService}

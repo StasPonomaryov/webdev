@@ -308,12 +308,16 @@ section h3 {
   @apply bg-white dark:bg-slate-900 py-8 px-4;
 }
 
+#work .work-row {
+  @apply flex;
+}
+
 #work .service {
-  @apply flex flex-col items-stretch w-full lg:w-1/3 p-2 mb-6;
+  @apply flex flex-wrap flex-col p-2 mb-6 w-full;
 }
 
 #work .service button {
-  @apply button-secondary flex self-start mt-auto;
+  @apply button-secondary self-start mt-auto;
 }
 
 #projects a,
@@ -342,4 +346,12 @@ section h3 {
 
 #contacts form {
   @apply mt-2 space-y-4;
+}
+
+/* ===MEDIA QUERIES=== */
+@media (max-width: 1024px) {
+  #work .work-row,
+  #work .service {
+    display: block;
+  }
 }
