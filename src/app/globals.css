@@ -29,11 +29,16 @@ html {
   scroll-behavior: smooth !important;
 }
 
-body {  
+body {
+  animation: fadeIn 2s;
   background-color: rgb(var(--background-rgb));
   color: rgb(var(--foreground-rgb));
   font-family: var(--font-source);
   font-size: 18px;
+  text-rendering: optimizeLegibility;
+  transition: color 0.5s, background-color 0.5s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ===SPECIAL STYLES=== */
@@ -156,7 +161,7 @@ section h3 {
 }
 
 .section-row {
-  @apply w-full flex flex-col lg:flex-row items-start items-center;
+  @apply w-full flex flex-col lg:flex-row items-center;
 }
 
 /* ===HEADER, FOOTER, MAIN=== */
@@ -353,5 +358,22 @@ section h3 {
   #work .work-row,
   #work .service {
     display: block;
+  }
+}
+
+/* ===ANIMATIONS=== */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
